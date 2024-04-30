@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richmond</title>
+    <title>iam_agyenim</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet"  href="style1.css">
+    <link rel="stylesheet"  href="syle1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         body {
             overflow-x: hidden;
@@ -255,6 +256,8 @@
         body{
             margin-left:10%;
         } 
+
+        
     
             .text-container {
                 margin-top: 20px;
@@ -302,7 +305,7 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .profile-picture img {
@@ -360,6 +363,92 @@
 }
 
 .fa {font-size:50px;}
+
+.menu-content a span {
+    margin-right: 10px;
+}
+
+.menu-div{
+    position: fixed;
+display: flex;
+align-items: center; 
+justify-content: center;
+height: 30px;
+width: 200px;
+padding: 10px 0px 10px;
+z-index: 100%;
+margin-bottom: 10%;
+
+}
+.sidebar a {
+    display: block; /* Adjust as needed */
+    text-decoration: none;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+.menu-content a{
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    width:80%;
+    margin-top: 10px;
+}
+.menu-content a:hover{
+    background: #86c1e9;
+    transition: background 0.25s;
+    text-decoration: none;
+}
+
+
+.menu-backdrop {
+    position: sticky;
+    top: 17px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    cursor: pointer;
+    z-index: 9999;/* Ensure the backdrop stays on top */
+}
+
+.menu-content a span {
+    margin-right: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -150px; /* Initially hide the sidebar off the screen */
+    width: 150px;
+    height: 100%;
+    background-color:#00abf0;
+    color:white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 999; /* Ensure the sidebar stays on top */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    height: 100%;
+}
+
+.sidebar.open {
+    left: 0; /* Show the sidebar */
+}
+.sidebar-header {
+    position: fixed;
+    top: 18px;
+     /* Add border to separate header from content */
+   
+    bottom: 10px; /* Ensure the header stays on top of the content */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none; /* Initially hidden */
+    z-index: 998; /* Ensure the overlay is below the sidebar */
+}
     </style>
 </head>
 <body>
@@ -372,16 +461,43 @@
                         <span class="visually-hidden">Loading...</span>
                     </div> iam_agyenim
                 </p>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="block sm:hidden menu-backdrop" onclick="toggleMenu()">
+                    <span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
+                </div>
+                <nav class="block sm:hidden sidebar">
+                    <span class="material-symbols-outlined" onclick="toggleMenu()">
+                        disabled_by_default
+                    </span>
+                    <hr class="" style="margin-bottom: 10%; margin-top: 10%; color: transparent;">
+                    <div class="menu-content text-sm ">
+                        <a href="#about" onclick="closeMenuAndRedirect('#about')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">account_circle</span>About
+                        </a>
+                        <a href="RES.pdf" onclick="closeMenuAndRedirect('RES.pdf')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">picture_as_pdf</span>Resume
+                        </a>
+                        <a href="portfolio.html" onclick="closeMenuAndRedirect('portfolio.html')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">workspace_premium</span>Portfolio
+                        </a>
+                        <a href="contact.html" onclick="closeMenuAndRedirect('contact.html')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">contact_support</span>Contact
+                        </a>
+                    </div>
+                
+                    <p class="text-sm text-center" style="margin-top: 100%;">iam_agyenim<span class="material-symbols-outlined" style="color: #2c3840">
+                        copyright
+                        </span>
+                    </p>
+                    <p class="text-sm text-center">NYU</p>
+                </nav>
+                <div class="overlay" onclick="toggleMenu()"></div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav fs-6 text-secondary">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#about">About |</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="RES.pdf">Resume |</a>
+                            <a class="nav-link" target="_blank" href="RES.pdf">Resume |</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio | </a>
@@ -405,7 +521,7 @@
                 <p class="text-secondary">A computer science major student at New York University</p>
                 <div class="btn-box">
                     <a href="portfolio.html">Portfolio</a>
-                    <a href="RES.pdf">Resume</a>
+                    <a target="_blank" href="RES.pdf">Resume</a>
                 </div>
                 <div class="social-media-container" style="margin-bottom: 1%;">
                     <div class="social-media">
@@ -425,38 +541,56 @@
         
         
         <hr class="bg-gray-300" id="about" style="margin-bottom: 5%; ">
-        <div class="about-me" >
-            <div class="profile-picture">
-              <img src="Rich.jpeg" alt="Profile Picture">
+        <div class="about-me row" style="margin-right:10px ;">
+            <div class="profile-picture col-md-6">
+                <img src="selfi.jpeg" alt="Profile Picture">
             </div>
-            <div class="about-text" >
-              <h2 class="fs-3 fw-bold text-black p1" i> <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
-              <p><strong>Richmond Agyenim-Boateng</strong>, a computer science major at New York University, is a tech enthusiast eager to explore software development and machine learning engineering. Committed to continual learning, he embraces new technologies and seeks opportunities to apply his knowledge. With a solid foundation in computer science principles, Richmond is passionate about leveraging technology to solve real-world problems and enhance lives. He is excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p>
-              <p>With a solid foundation in computer science principles, Richmond is passionate about leveraging technology to solve real-world problems and enhance lives. He is excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p>
-              <!-- Add more paragraphs as needed -->
-              <div class="stats" style="margin-top: 2%;">
-                <div class="card">
-                  <p><i class="fa fa-award" style='color:#18b5e0'></i></p>
-                  <h3>1 year</h3>
-                  <p>Experience</p>
+            <div class="about-text col-md-6">
+                <h2 class="fs-3 fw-bold text-black p1 hidden sm:hidden md:hidden lg:block"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
+                <h2 class="fs-3 fw-bold text-black p1 text-center block sm:block md:block lg:hidden"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
+                <p><strong>Richmond Agyenim-Boateng</strong>, a computer science major at New York University, is a tech enthusiast eager to explore software development and machine learning engineering. He embraces new technologies and seeks opportunities to apply his knowledge.</p><br>
+                <p>With a solid foundation in computer science principles, He is passionate about leveraging technology to solve real-world problems and enhance lives. He  excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
+                <p>With a solid foundation in computer science principles, Richmond is passionate about leveraging technology to solve real-world problems and enhance lives. He is excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
+                <div class="container text-center block sm:hidden">
+                    <div class="row">
+                        <div class="card  col-6 col-sm-3"><p><i class="fa fa-award" style='color:#18b5e0'></i></p>
+                            <h3>1 year</h3>
+                            <p>Experience</p></div>
+                            <div class="w-100"></div><br>
+                            <div class="card  col-6 col-sm-3"> <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
+                                <h3>3+</h3>
+                                <p>Projects</p>
+                            </div>
+                                <div class="w-100"></div><br>
+                                <div class=" card col-6 col-sm-3"> <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
+                                    <h3>10+</h3>
+                                    <p>Endorsement</p>
+                                </div>
+
+                        </div>
+                
+                    </div>
                 </div>
-                <div class="card">
-                  <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
-                  <h3>3+</h3>
-                  <p>Projects</p>
+                <div class="hidden sm:block  text-center" style="margin-top: 2%;">
+                    <div class="card">
+                        <p><i class="fa fa-award" style='color:#18b5e0'></i></p>
+                        <h3>1 year</h3>
+                        <p>Experience</p>
+                    </div>
+                    <div class="card">
+                        <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
+                        <h3>3+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="card">
+                        <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
+                        <h3>10+</h3>
+                        <p>Endorsement</p>
+                    </div>
                 </div>
-                <div class="card"  >
-                  <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
-                  <h3>10+</h3>
-                  <p>Endorsement</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           
-        </div>
-          
+            
+           </div>
+        </div> 
         <!-- Skill Section -->
        <!-- Skill Section -->
        <hr class="bg-gray-300" style="margin-bottom: 5%; margin-left: 6%; margin-right: 6%; margin-top: 5%;" >
@@ -467,12 +601,12 @@
             <br class="d-md-none">
             <p>
             <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-6">
-                    <div class="card text-center p-4">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card text-center p-4 ">
                         <figcaption class="text-center blockquote-footer " style="margin-bottom: 10%;">
                             Frontend Developer
                         </figcaption>
-                        <div class="row text-sm">
+                        <div class="row text-sm ">
                             <div class="col-md-6 col-sm-6 ">
                                 <div class="skill">
                                     <h5 class="card-title flex justify-content-center items-center">
@@ -482,7 +616,7 @@
                                         HTML
                                     </h5>
                                     <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
                                     </div>
                                     <p class="text-center mt-2">Advanced</p>
                                 </div>
@@ -554,7 +688,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="card text-center p-4">
                         <figcaption class="text-center blockquote-footer" style="margin-bottom: 10%;">
                             Backend Developer
@@ -581,7 +715,7 @@
                                         API
                                     </h5>
                                     <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
                                     </div>
                                     <p class="text-center mt-2">Intermediate</p>
                                 </div>
@@ -590,10 +724,10 @@
                                         <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
                                         </svg>
-                                        New Skill
+                                        PIP
                                     </h5>
                                     <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        <div class="progress-bar " role="progressbar" style="width: 65%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">65%</div>
                                     </div>
                                     <p class="text-center mt-2">Intermediate</p>
                                 </div>
@@ -604,7 +738,7 @@
                                         <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
                                         </svg>
-                                        Another Skill
+                                        SQL
                                     </h5>
                                     <div class="progress skilling">
                                         <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
@@ -616,10 +750,10 @@
                                         <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
                                         </svg>
-                                        Last Skill
+                                        RESTful APIs
                                     </h5>
                                     <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
                                     </div>
                                     <p class="text-center mt-2">Intermediate</p>
                                 </div>
@@ -628,10 +762,10 @@
                                         <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
                                         </svg>
-                                        End SKill
+                                        Flask
                                     </h5>
                                     <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
                                     </div>
                                     <p class="text-center mt-2">Intermediate</p>
                                 </div>
@@ -691,7 +825,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Software Developer
+                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Web Developer
                                     <figcaption class="text-center mt-1 blockquote-footer">
                                         Faith Life Embassy
                                     </figcaption>
@@ -725,10 +859,22 @@
             <hr class="bg-gray-300" style="margin-bottom: 2%; margin-top: 10%;">
         <div class="row vertical-center">
             <div class="col-md-4" style="margin-bottom: 2%;">
-                <h2 class="fs-3 fw-bold text-black p1 me "><i class="fas fs-4 fa-circle " style="  margin-bottom: 2%;color:#18b5e0 " id="skill"></i> Connect</h2>
-                    <p class="text-sm text-secondary">Looking forward to connnect with you.</p>    
+                <div class="hidden sm:block">
+                    <h2 class="fs-3 fw-bold text-black p1 me">
+                        <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
+                    </h2>
+                    <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
+                </div>
+                
+                <div class="block sm:hidden text-center">
+                    <h2 class="fs-3 fw-bold text-black p1 me">
+                        <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
+                    </h2>
+                    <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
+                </div>
+                  
             </div>
-            <div class="col-md-5 "style="margin-bottom: 2%;"   >
+            <div class="col-md-5  text-center"style="margin-bottom: 2%;"   >
             
                 
                 <a href="#"><i class="fab fa-github  whatsapp1"></i></a>
@@ -741,6 +887,22 @@
     </div>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script>
+   function toggleMenu() {
+    var sidebar = document.querySelector('.sidebar');
+    var overlay = document.querySelector('.overlay');
+    sidebar.classList.toggle('open'); // Toggle the 'open' class on the sidebar
+    overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none'; // Toggle the overlay
+}
+
+function closeMenuAndRedirect(url) {
+    var sidebar = document.querySelector('.sidebar');
+    var overlay = document.querySelector('.overlay');
+    sidebar.classList.remove('open'); // Remove the 'open' class from the sidebar
+    overlay.style.display = 'none'; // Hide the overlay
+    window.location.href = url;
+}
+
+
     function scrollToSkills() {
       // Scroll to the skills section smoothly
       document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
