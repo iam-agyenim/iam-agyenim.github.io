@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iam_agyenim</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet"  href="syle1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
         <!-- Your form inputs here -->
     </form>
@@ -81,6 +82,92 @@
                 margin-right:-10% ;
             }
         }
+
+        .menu-content a span {
+    margin-right: 10px;
+}
+
+.menu-div{
+    position: fixed;
+display: flex;
+align-items: center; 
+justify-content: center;
+height: 30px;
+width: 200px;
+padding: 10px 0px 10px;
+z-index: 100%;
+margin-bottom: 10%;
+
+}
+.sidebar a {
+    display: block; /* Adjust as needed */
+    text-decoration: none;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+.menu-content a{
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    width:80%;
+    margin-top: 10px;
+}
+.menu-content a:hover{
+    background: #86c1e9;
+    transition: background 0.25s;
+    text-decoration: none;
+}
+
+
+.menu-backdrop {
+    position: sticky;
+    top: 17px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    cursor: pointer;
+    z-index: 9999;/* Ensure the backdrop stays on top */
+}
+
+.menu-content a span {
+    margin-right: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -150px; /* Initially hide the sidebar off the screen */
+    width: 150px;
+    height: 100%;
+    background-color:#00abf0;
+    color:white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 999; /* Ensure the sidebar stays on top */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    height: 100%;
+}
+
+.sidebar.open {
+    left: 0; /* Show the sidebar */
+}
+.sidebar-header {
+    position: fixed;
+    top: 18px;
+     /* Add border to separate header from content */
+   
+    bottom: 10px; /* Ensure the header stays on top of the content */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none; /* Initially hidden */
+    z-index: 998; /* Ensure the overlay is below the sidebar */
+}
     </style>
 </head>
 <body>
@@ -92,9 +179,36 @@
                         <span class="visually-hidden">Loading....</span>
                     </div> iam_agyenim
                 </p>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="block sm:hidden menu-backdrop" onclick="toggleMenu()">
+                    <span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
+                </div>
+                <nav class="block sm:hidden sidebar">
+                    <span class="material-symbols-outlined" onclick="toggleMenu()">
+                        disabled_by_default
+                    </span>
+                    <hr class="" style="margin-bottom: 10%; margin-top: 10%; color: transparent;">
+                    <div class="menu-content text-sm ">
+                        <a href="#about" onclick="closeMenuAndRedirect('#about')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">account_circle</span>About
+                        </a>
+                        <a href="RES.pdf" onclick="closeMenuAndRedirect('RES.pdf')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">picture_as_pdf</span>Resume
+                        </a>
+                        <a href="portfolio.html" onclick="closeMenuAndRedirect('portfolio.html')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">workspace_premium</span>Portfolio
+                        </a>
+                        <a href="contact.html" onclick="closeMenuAndRedirect('contact.html')">
+                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">contact_support</span>Contact
+                        </a>
+                    </div>
+                
+                    <p class="text-sm text-center" style="margin-top: 100%;">iam_agyenim<span class="material-symbols-outlined" style="color: #2c3840">
+                        copyright
+                        </span>
+                    </p>
+                    <p class="text-sm text-center">NYU</p>
+                </nav>
+                <div class="overlay" onclick="toggleMenu()"></div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav fs-6 text-secondary">
                         <li class="nav-item">
@@ -167,6 +281,21 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
+         function toggleMenu() {
+    var sidebar = document.querySelector('.sidebar');
+    var overlay = document.querySelector('.overlay');
+    sidebar.classList.toggle('open'); // Toggle the 'open' class on the sidebar
+    overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none'; // Toggle the overlay
+}
+
+function closeMenuAndRedirect(url) {
+    var sidebar = document.querySelector('.sidebar');
+    var overlay = document.querySelector('.overlay');
+    sidebar.classList.remove('open'); // Remove the 'open' class from the sidebar
+    overlay.style.display = 'none'; // Hide the overlay
+    window.location.href = url;
+}
+
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default form submission behavior
             
