@@ -3,368 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iam_agyenim</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet"  href="syle1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
-        body {
-            overflow-x: hidden;
-           
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
         }
-        
-        
-
-        .p1 {
-            font-family: "Times New Roman", Times, serif;
-        }
-
-        .profile-section {
-            display: flex;
-            margin-bottom: 50px;
-            margin-top: -5%;
-        }
-
-        .profile-image {
-            width: 400px;
-        height: 400px;
-        border-radius: 50%;
-        border: 5px solid #fff;
-        overflow: hidden;
-        margin-right: 20px;
-        position: relative;
-        
-        }
-
-        .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: Flow 5s infinite alternate;
-    border-radius: 50%;
-    position: relative;
-}
-
-.profile-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1e293b; /* Adjust the opacity as needed */
-    opacity:30% ;
-    border-radius: 50%;
-    animation: Flow 5s infinite alternate;
-    z-index: 10;
-}
-
-@keyframes Flow {
-    0% {
-        border-radius: 50%;
-    }
-    25% {
-        border-radius: 78% 22% 83% 17% / 38% 67% 33% 62%;
-    }
-    75% {
-        border-radius: 78% 22% 56% 44% / 38% 45% 55% 62%;
-    }
-    100% {
-        border-radius: 50%;
-    }
-}
-
-        
-        
-
-        .Home-content {
-            flex: 1;
-        }
-
-        @media (max-width: 992px) {
-            .profile-section {
-                flex-direction: column;
-                margin-top: 40%;
-                align-items: center;
-                align-content: center;
-            }
-
-            .profile-image {
-                width: 300px;
-                height: 300px;
-                margin-right: 0;
-                margin-bottom: 20px;
-                margin-left: -10%;
-            }
-        }
-
-        .vertical-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .vertical {
-            border-left: 2px solid black;
-            height: 50px;
-            position: relative;
-            margin: 0 auto;
-            margin-left: 50%;
-        }
-
-        .social-media-container {
-        position: absolute;
-        margin-left: -3%;
-        margin-top: 2%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        }
-
-        .social-media {
-            font-size: 24px;
-            display: flex;
-            flex-direction: row;
-            
-        
-        }
-
-        .social-media a {
-            color: #333;
-            text-decoration: none;
-            margin: 10px 50px;
-        }
-        .social-media a:hover{
-            color: #00abf0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .skill-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-            
-        }
-
-        .skill {
-            margin: 0 20px;
-            width: 160px;
-            height: 160px;
-            position: relative;
-        }
-
-        .outer {
-            height: 160px;
-            width: 160px;
-            border-radius: 50%;
+        .project {
             padding: 20px;
-            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        }
+        .project-description {
+            padding-right: 10px;
+        }
+        .project-image img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .inner {
-            height: 120px;
-            width: 120px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-        }
-
-        #number {
-            font-weight: 600;
-            color: #555;
-        }
-
-       .arrow{
-        position : absolute;
-        top: 90%;
-        left: 90%;
-       }
-       .arrow2{
-        position : absolute;
-        top: 150%;
-        left: 90%;
-       }
-
-        @media (max-width: 1024px) {
-            .social-media {
-                position: static;
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-            }
-            .social-media a {
-                margin-left: 20px;
-            }
-            .skill-container {
-                flex-wrap: wrap;
-            }
-            .skill {
-                margin: 20px 0;
-            }
-            .arrow2{
-            position : absolute;
-            top: 145%;
-            left: 90%;
-            
-       }
-       .gape{
-            margin-bottom: 2%;
-            margin-top: -1%;
-        }
-        }
-
-        @media (max-width: 768px) {
-            .text-container {
-                margin-top: 50px;
-            }
-            .me{
-            margin-top: 8%;
-        }
-        .skilling{
-            margin-right: 10px;
-        }
-        .gape{
-            margin-bottom: 2%;
-            margin-top: -1%;
-        }
-                .about-me {
-                flex-direction: column; /* Display elements vertically */
-            }
-            
-            .profile-picture img {
-                width: 80px; /* Decrease width of profile picture for smaller screens */
-            }
-
-            .about-text {
-                margin-top: 20px; /* Add margin between profile picture and text */
-            }
-        }
-
-        @media (max-width: 576px){
-        body{
-            margin-left:10%;
-        } 
-
-        
-    
-            .text-container {
-                margin-top: 20px;
-            }
-            
-           
-        .me{
-            margin-top: 8%;
-        }
-        .gape{
-            margin-bottom: 4%;
-        }
-        
-        }
-        .whatsapp{
-            text-decoration:none;
-        
-        }
-        .whatsapp:hover{
-            color: #00abf0;
-        }
-
-        .whatsapp1{
-            text-decoration:none;
-            margin-right: 30px;
-            font-size: 24px;
-            
-        
-        }
-        .whatsapp1:hover{
-            color: #00abf0;
-        }
-    
-        .about-me {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-picture {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: auto;
-}
-
-.profile-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.about-text {
-  flex: 1;
-  padding-left: 20px;
-}
-
-.stats {
-  display: flex;
-}
-
-.card {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
-}
-
-/* Animation */
-.about-me {
-  animation: slide-in 1s ease-out;
-}
-
-.stats .card {
-  animation: fade-in 1s ease-out;
-}
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fa {font-size:50px;}
-
-.menu-content a span {
+        .menu-content a span {
     margin-right: 10px;
 }
 
@@ -452,12 +115,11 @@ margin-bottom: 10%;
     </style>
 </head>
 <body>
-    <div class="container bg-white " id="Main" >
+    <div class="container bg-white">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <p class="navbar-brand fs-6 fw-bold text-black">
-                    <div class="spinner-grow 
-                      mr-1" style="color: #00abf0;" role="status">
+                    <div class="spinner-grow mr-1" style="color: #00abf0;" role="status">
                         <span class="visually-hidden">Loading...</span>
                     </div> iam_agyenim
                 </p>
@@ -494,13 +156,13 @@ margin-bottom: 10%;
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav fs-6 text-secondary">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About |</a>
+                            <a class="nav-link " aria-current="page" href="index.html">About |</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" target="_blank" href="RES.pdf">Resume |</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Project| </a>
+                            <a class="nav-link active" href="portfolio.html">Project | </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">contact</a>
@@ -509,409 +171,61 @@ margin-bottom: 10%;
                 </div>
             </div>
         </nav>
-        <!-- Div with circle containing picture and text -->
-        <section class="profile-section Home" >
-            <div class="profile-image " >
-                <img  src="Rich.jpeg" alt="Profile Picture">
+    </div>
+    
+    <div class="container mt-5">
+        <p class="fs-3 fw-bold text-black p1 " style="margin-top: 10%; margin-bottom: 5%;"><i class="fas fs-4 fa-circle " style=" margin-top: -10%; margin-bottom: 2%;color:#18b5e0 " id="skill"></i> Project</p>
+        <div class="row no-gutters">
+            <div class="col-md-6 project">
+                <div class="project-description">
+                    <h3 class="fs-4 text-bold" style="margin-bottom: 10px;">Web Calculator</h3>
+                    <p class="text-secondary text-sm">The Web Calculator is a smart online tool made with HTML, JavaScript, and CSS. It helps with math calculations easily. It's designed to be user-friendly, so people can do math quickly and accurately.</p><br>
+                    <p class="text-secondary text-sm">
+                        This Web Calculator is an invaluable asset for any digital toolkit, providing a dependable solution for conducting arithmetic calculations right in a web browser. Whether it's for educational endeavors, professional assignments, or personal undertakings, this calculator boosts productivity and convenience, making math tasks easier and more efficient.</p>
+                        <br>
+                    <p class="text-secondary text-sm">Follow Up -> <a href="/WEbCal" target="_blank" >{GitHub}</a></p>
+                </div>
             </div>
-           
-            <div class="Home-content">
-                <h1> Richmond Agyenim-Boateng</h1>
-                <h3><i class='bx bx-collapse-alt bx-spin' style='color:#18b5e0'></i> Fullstack Developer</h3>
-                <p class="text-secondary">A computer science major student at New York University</p>
-                <div class="btn-box">
-                    <a href="portfolio.html">Project</a>
-                    <a target="_blank" href="RES.pdf">Resume</a>
+            <div class="col-md-6 project">
+                <div class="project-image">
+                    <img src="webcal.png" alt="Project 1 Image">
                 </div>
-                <div class="social-media-container" style="margin-bottom: 1%;">
-                    <div class="social-media">
-                        <a href="https://github.com/iam-agyenim"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/share/KcJtmwsssJZLoAaT/?mibextid=YMEMSu"><i class="fab fa-facebook"></i></a>
-                        <a href="https://x.com/Agyenim73210404"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-               
-                
-            </div>
-            <a href="#about" onclick="scrollToSkills()"><i class='hidden sm:hidden md:hidden lg:block xl:block 2xl:hidden  fas fa-arrow-circle-down arrow animate-bounce' style='font-size:32px; color: #00abf0;'></i></a>
-              <!-- Social media icons -->
-       
-        </section>
-        
-        
-        <hr class="bg-gray-300" id="about" style="margin-bottom: 5%; ">
-        <div class="about-me row" style="margin-right:10px ;">
-            <div class="profile-picture col-md-6">
-                <img src="selfi.jpeg" alt="Profile Picture">
-            </div>
-            <div class="about-text col-md-6">
-                <h2 class="fs-3 fw-bold text-black p1 hidden sm:hidden md:hidden lg:block"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
-                <h2 class="fs-3 fw-bold text-black p1 text-center block sm:block md:block lg:hidden"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
-                <p><strong>Richmond Agyenim-Boateng</strong>, a computer science major at New York University, is a tech enthusiast eager to explore software development and machine learning engineering. He embraces new technologies and seeks opportunities to apply his knowledge.</p><br>
-                <p>With a solid foundation in computer science principles, He is passionate about leveraging technology to solve real-world problems and enhance lives. He  excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
-                <p>With a solid foundation in computer science principles, Richmond is passionate about leveraging technology to solve real-world problems and enhance lives. He is excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
-                <div class="container text-center block sm:hidden">
-                    <div class="row">
-                        <div class="card  col-6 col-sm-3"><p><i class="fa fa-award" style='color:#18b5e0'></i></p>
-                            <h3>1 year</h3>
-                            <p>Experience</p></div>
-                            <div class="w-100"></div><br>
-                            <div class="card  col-6 col-sm-3"> <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
-                                <h3>3+</h3>
-                                <p>Projects</p>
-                            </div>
-                                <div class="w-100"></div><br>
-                                <div class=" card col-6 col-sm-3"> <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
-                                    <h3>10+</h3>
-                                    <p>Endorsement</p>
-                                </div>
-
-                        </div>
-                
-                    </div>
-                </div>
-                <div class="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex" style="margin-top: 2%;">
-                    <div class="card">
-                      <p><i class="fa fa-award" style='color:#18b5e0'></i></p>
-                      <h3>1 year</h3>
-                      <p>Experience</p>
-                    </div>
-                    <div class="card">
-                      <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
-                      <h3>3+</h3>
-                      <p>Projects</p>
-                    </div>
-                    <div class="card"  >
-                      <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
-                      <h3>10+</h3>
-                      <p>Endorsement</p>
-                    </div>
-                  
-                </div>
-            
-           </div>
-        </div> 
-        <!-- Skill Section -->
-       <!-- Skill Section -->
-       <hr class="bg-gray-300" style="margin-bottom: 5%; margin-left: 6%; margin-right: 6%; margin-top: 5%;" >
-        <div class="container mt-5" id="Skill" >
-            <p class="fs-3 fw-bold text-black p1 text-center">
-                <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i> Skills
-            </p>
-            <br class="d-md-none">
-            <p>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-12">
-                    <div class="card text-center p-4 ">
-                        <figcaption class="text-center blockquote-footer " style="margin-bottom: 10%;">
-                            Frontend Developer
-                        </figcaption>
-                        <div class="row text-sm ">
-                            <div class="col-md-6 col-sm-6 ">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        HTML
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        CSS
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        JavaScript
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #00abf0;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 md-w-1/2">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Bootstrap CSS
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Tailwind CSS
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        GitHub
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #00abf0;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-sm-12">
-                    <div class="card text-center p-4">
-                        <figcaption class="text-center blockquote-footer" style="margin-bottom: 10%;">
-                            Backend Developer
-                        </figcaption>
-                        <div class="row text-sm">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Python
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 80%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        API
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        PIP
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 65%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        SQL
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        RESTful APIs
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center  items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Flask
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        
-
-
-
-
-            <hr class="bg-gray-300" style="margin-bottom: 5%; margin-top: 10%;">
-            <div>
-                <p class="fs-3 fw-bold text-black p1 text-center">
-                    <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i> Qualifications
-                </p>
-                <br class="d-md-none">
-                <p>
-                    <figcaption class="text-center blockquote-footer">
-                        Education || Experience
-                    </figcaption>
-                </p>
-                <div class="row vertical-center" >
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Computer Science
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        New York University
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        May, 2027
-                                    </figcaption>
-                                </p>
-                                <p class="vertical"></p>
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">High School Diploma
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        St.James Seminary Senior High
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        September, 2021
-                                    </figcaption>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Web Developer
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        Faith Life Embassy
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        2024 - Present
-                                    </figcaption>
-                                </p>
-                                <p class="vertical"></p>
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Mentor
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        Yaf Ghana
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        2023 - Present
-                                    </figcaption>
-                                </p>
-                                <a href="#Main" onclick="scrollToQualification()"><i class='hidden sm:hidden md:hidden lg:block xl:block 2xl:block fas fa-arrow-circle-up arrow2 animate-bounce' style='font-size:32px; color: #00abf0;'></i></a>
-                                <!-- Social media icons -->
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            
-        </div>  
-            <hr class="bg-gray-300" style="margin-bottom: 2%; margin-top: 10%;">
-        <div class="row vertical-center">
-            <div class="col-md-4" style="margin-bottom: 2%;">
-                <div class="hidden sm:block">
-                    <h2 class="fs-3 fw-bold text-black p1 me">
-                        <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
-                    </h2>
-                    <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
-                </div>
-                
-                <div class="block sm:hidden text-center">
-                    <h2 class="fs-3 fw-bold text-black p1 me">
-                        <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
-                    </h2>
-                    <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
-                </div>
-                  
-            </div>
-            <div class="col-md-5  text-center"style="margin-bottom: 2%;"   >
-            
-                
-                <a href="#"><i class="fab fa-github  whatsapp1"></i></a>
-                <a href="#"><i class="fab fa-facebook whatsapp1"></i></a>
-                <a href="#"><i class="fab fa-twitter whatsapp1"></i></a>
-                <a href="#"><i class="fab fa-instagram whatsapp1"></i></a>
             </div>
         </div>
-    
+        <!--
+        <div class="row no-gutters">
+            <div class="col-md-6 project">
+                <div class="project-description">
+                    <h3 class="fs-4 text-bold">Project Title 2</h3>
+                    <p class="text-secondary text-sm">Description of Project 2</p>
+                </div>
+            </div>
+            <div class="col-md-6 project">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Project 2 Image">
+                </div>
+            </div>
+        </div>
+        Add more rows for additional projects -->
+        
     </div>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script>
-   function toggleMenu() {
-    var sidebar = document.querySelector('.sidebar');
-    var overlay = document.querySelector('.overlay');
-    sidebar.classList.toggle('open'); // Toggle the 'open' class on the sidebar
-    overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none'; // Toggle the overlay
-}
 
-function closeMenuAndRedirect(url) {
-    var sidebar = document.querySelector('.sidebar');
-    var overlay = document.querySelector('.overlay');
-    sidebar.classList.remove('open'); // Remove the 'open' class from the sidebar
-    overlay.style.display = 'none'; // Hide the overlay
-    window.location.href = url;
-}
-
-
-    function scrollToSkills() {
-      // Scroll to the skills section smoothly
-      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script> function toggleMenu() {
+        var sidebar = document.querySelector('.sidebar');
+        var overlay = document.querySelector('.overlay');
+        sidebar.classList.toggle('open'); // Toggle the 'open' class on the sidebar
+        overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none'; // Toggle the overlay
     }
-    function scrollToQualification(){
-        document.getElementById('Main').scrollIntoView({ behavior: 'smooth' }); 
-    }
-</script>
-
+    
+    function closeMenuAndRedirect(url) {
+        var sidebar = document.querySelector('.sidebar');
+        var overlay = document.querySelector('.overlay');
+        sidebar.classList.remove('open'); // Remove the 'open' class from the sidebar
+        overlay.style.display = 'none'; // Hide the overlay
+        window.location.href = url;
+    }</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
