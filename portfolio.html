@@ -57,6 +57,8 @@ margin-bottom: 10%;
     border-radius: 28px;
     width:80%;
     margin-top: 10px;
+    font-size: 20px;
+    margin-left: 12%;
 }
 .menu-content a:hover{
     background: #86c1e9;
@@ -70,25 +72,25 @@ margin-bottom: 10%;
     top: 17px; /* Adjust as needed */
     left: 20px; /* Adjust as needed */
     cursor: pointer;
-    z-index: 9999;/* Ensure the backdrop stays on top */
+    z-index: 1;/* Ensure the backdrop stays on top */
 }
 
 .menu-content a span {
-    margin-right: 20px;
-}
 
+   font-size: 32px;
+}
 .sidebar {
     position: fixed;
     top: 0;
-    right: -150px; /* Initially hide the sidebar off the screen */
-    width: 150px;
+    right: -100%; /* Initially hide the sidebar off the screen */
+    width: 100%;
     height: 100%;
-    background-color:#00abf0;
+    background-color:rgba(0, 0, 0, 0.5);
     color:white;
     padding: 20px;
     transition: left 0.3s ease;
     z-index: 999; /* Ensure the sidebar stays on top */
-    overflow-y: auto; /* Enable vertical scrollbar */
+    overflow-y: hidden; /* Enable vertical scrollbar */
     height: 100%;
 }
 
@@ -112,10 +114,13 @@ margin-bottom: 10%;
     display: none; /* Initially hidden */
     z-index: 998; /* Ensure the overlay is below the sidebar */
 }
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:fixed; top:0; z-index: -5; width: 100%; height: 100%; background-color: #081b29; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: transparent; position: absolute; top: 48px; left: 0; width: 80px; color: transparent; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
     </style>
 </head>
 <body>
-    <div class="container bg-white">
+    <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <div class="container " style="color: white;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <p class="navbar-brand fs-6 fw-bold text-black">
@@ -127,45 +132,45 @@ margin-bottom: 10%;
                     <span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
                 </div>
                 <nav class="block sm:hidden sidebar">
-                    <span class="material-symbols-outlined" onclick="toggleMenu()">
+                    <span class="material-symbols-outlined" style="color: #00abf0;" onclick="toggleMenu()">
                         disabled_by_default
                     </span>
                     <hr class="" style="margin-bottom: 10%; margin-top: 10%; color: transparent;">
                     <div class="menu-content text-sm ">
                         <a href="index.html" onclick="closeMenuAndRedirect('#about')">
-                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">account_circle</span>About
+                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">account_circle</span>About
                         </a>
                         <a href="RES.pdf" onclick="closeMenuAndRedirect('RES.pdf')">
-                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">picture_as_pdf</span>Resume
+                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">picture_as_pdf</span>Resume
                         </a>
                         <a href="portfolio.html" onclick="closeMenuAndRedirect('portfolio.html')">
-                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">workspace_premium</span>Project
+                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">workspace_premium</span>Project
                         </a>
                         <a href="contact.html" onclick="closeMenuAndRedirect('contact.html')">
-                            <span class="material-symbols-outlined text-bold" style="color: #2c3840">contact_support</span>Contact
+                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">contact_support</span>Contact
                         </a>
                     </div>
                 
-                    <p class="text-sm text-center" style="margin-top: 100%;">iam_agyenim<span class="material-symbols-outlined" style="color: #2c3840">
+                    <p class="text-sm  text-white text-center" style="margin-top: 20%;">iam_agyenim<span class="material-symbols-outlined" style="color: #00abf0;">
                         copyright
                         </span>
                     </p>
-                    <p class="text-sm text-center">NYU</p>
+                    <p class="text-sm text-center text-white">NYU</p>
                 </nav>
                 <div class="overlay" onclick="toggleMenu()"></div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav fs-6 text-secondary">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">About |</a>
+                            <a class="nav-link " aria-current="page" style="color: white;" href="index.html">About |</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="RES.pdf">Resume |</a>
+                            <a class="nav-link" target="_blank" style="color: white;" href="RES.pdf">Resume |</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="portfolio.html">Project | </a>
+                            <a class="nav-link active" style="color: white;" href="portfolio.html">Project | </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">contact</a>
+                            <a class="nav-link" style="color: white;" href="contact.html">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -174,16 +179,16 @@ margin-bottom: 10%;
     </div>
     
     <div class="container mt-5">
-        <p class="fs-3 fw-bold text-black p1 " style="margin-top: 10%; margin-bottom: 5%;"><i class="fas fs-4 fa-circle " style=" margin-top: -10%; margin-bottom: 2%;color:#18b5e0 " id="skill"></i> Project</p>
+        <p class="fs-3 fw-bold text-white p1 " style="margin-top: 10%; margin-bottom: 5%;"><i class="fas fs-4 fa-circle " style=" margin-top: -10%; margin-bottom: 2%;color:#18b5e0 " id="skill"></i> Project</p>
         <div class="row no-gutters">
             <div class="col-md-6 project">
-                <div class="project-description">
+                <div class="project-description" style="color: white;">
                     <h3 class="fs-4 text-bold" style="margin-bottom: 10px;">Web Calculator</h3>
                     <p class="text-secondary text-sm">The Web Calculator is a smart online tool made with HTML, JavaScript, and CSS. It helps with math calculations easily. It's designed to be user-friendly, so people can do math quickly and accurately.</p><br>
                     <p class="text-secondary text-sm">
                         This Web Calculator is an invaluable asset for any digital toolkit, providing a dependable solution for conducting arithmetic calculations right in a web browser. Whether it's for educational endeavors, professional assignments, or personal undertakings, this calculator boosts productivity and convenience, making math tasks easier and more efficient.</p>
                         <br>
-                    <p class="text-secondary text-sm">Follow Up -> <a href="/WEbCal" target="_blank" >{GitHub}</a></p>
+                    <p class="text-white text-sm">Follow Up -> <a href="/WEbCal" target="_blank" >{GitHub}</a></p>
                 </div>
             </div>
             <div class="col-md-6 project">
@@ -206,7 +211,7 @@ margin-bottom: 10%;
                 </div>
             </div>
         </div>
-        Add more rows for additional projects -->
+         Add more rows for additional projects -->
         
     </div>
 
@@ -224,7 +229,10 @@ margin-bottom: 10%;
         sidebar.classList.remove('open'); // Remove the 'open' class from the sidebar
         overlay.style.display = 'none'; // Hide the overlay
         window.location.href = url;
-    }</script>
+    }
+    particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#201b1e"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
