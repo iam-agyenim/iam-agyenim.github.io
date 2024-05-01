@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet"  href="style1.css">
+    <link rel="stylesheet"  href="syle1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -134,7 +134,7 @@
         }
 
         .social-media a {
-            color: #333;
+            color: white;
             text-decoration: none;
             margin: 10px 50px;
         }
@@ -284,13 +284,15 @@
             text-decoration:none;
             margin-right: 30px;
             font-size: 24px;
-           
+            padding: 5px;
+            
         
         }
         .whatsapp1:hover{
             color: #00abf0;
+           
         }
-    
+   
         .about-me {
   display: flex;
   align-items: center;
@@ -449,13 +451,15 @@ margin-bottom: 10%;
     display: none; /* Initially hidden */
     z-index: 998; /* Ensure the overlay is below the sidebar */
 }
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:fixed; top:0; z-index: -5; width: 100%; height: 100%; background-color: #081b29; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: transparent; position: absolute; top: 48px; left: 0; width: 80px; color: transparent; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
     </style>
 </head>
 <body>
-    <div class="container bg-white " id="Main" >
+    <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <div  class="container " style="background-color: transparent; color: white;" >
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <p class="navbar-brand fs-6 fw-bold text-black">
+                <p class="navbar-brand fs-6 fw-bold text-white">
                     <div class="spinner-grow 
                       mr-1" style="color: #00abf0;" role="status">
                         <span class="visually-hidden">Loading...</span>
@@ -491,19 +495,19 @@ margin-bottom: 10%;
                     <p class="text-sm text-center">NYU</p>
                 </nav>
                 <div class="overlay" onclick="toggleMenu()"></div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav fs-6 text-secondary">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About |</a>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav fs-6 " >
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" style="color: white;" href="#about">About |</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="RES.pdf">Resume |</a>
+                            <a class="nav-link" target="_blank"  style="color: white;"href="RES.pdf">Resume |</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Project | </a>
+                            <a class="nav-link" style="color: white;" href="portfolio.html">Project | </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">contact</a>
+                            <a class="nav-link" style="color: white;" href="contact.html">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -515,17 +519,17 @@ margin-bottom: 10%;
                 <img  src="Rich.jpeg" alt="Profile Picture">
             </div>
            
-            <div class="Home-content">
+            <div class="Home-content" style="color: white;">
                 <h1> Richmond Agyenim-Boateng</h1>
                 <h3><i class='bx bx-collapse-alt bx-spin' style='color:#18b5e0'></i> Fullstack Developer</h3>
-                <p class="text-secondary">A computer science major  at New York University</p>
+                <p class="text-secondary">A computer science major student at New York University</p>
                 <div class="btn-box">
                     <a href="portfolio.html">Project</a>
                     <a target="_blank" href="RES.pdf">Resume</a>
                 </div>
-                <div class="social-media-container" style="margin-bottom: 1%;">
-                    <div class="social-media">
-                       <a href="https://github.com/iam-agyenim"><i class="fab fa-github"></i></a>
+                <div class="social-media-container " style="margin-bottom: 1%;">
+                    <div class="social-media ">
+                        <a href="https://github.com/iam-agyenim"><i class="fab fa-github"></i></a>
                         <a href="https://www.facebook.com/share/KcJtmwsssJZLoAaT/?mibextid=YMEMSu"><i class="fab fa-facebook"></i></a>
                         <a href="https://x.com/Agyenim73210404"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr"><i class="fab fa-instagram"></i></a>
@@ -538,10 +542,10 @@ margin-bottom: 10%;
               <!-- Social media icons -->
        
         </section>
+    </div>    
         
-        
-        <hr class="bg-gray-300" id="about" style="margin-bottom: 5%; ">
-        <div class="about-me row" style="margin-right:10px ;">
+    <hr class="bg-gray-300" id="about" style="margin-bottom: 5%; ">
+    <div class="container  about-me row" style="margin-left: 5%;">
             <div class="profile-picture col-md-6">
                 <img src="selfi.jpeg" alt="Profile Picture">
             </div>
@@ -550,6 +554,7 @@ margin-bottom: 10%;
                 <h2 class="fs-3 fw-bold text-black p1 text-center block sm:block md:block lg:hidden"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
                 <p><strong>Richmond Agyenim-Boateng</strong>, a computer science major at New York University, is a tech enthusiast eager to explore software development and machine learning engineering. He embraces new technologies and seeks opportunities to apply his knowledge.</p><br>
                 <p>With a solid foundation in computer science principles, He is passionate about leveraging technology to solve real-world problems and enhance lives. He  excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
+                <p>With a solid foundation in computer science principles, Richmond is passionate about leveraging technology to solve real-world problems and enhance lives. He is excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
                 <div class="container text-center block sm:hidden">
                     <div class="row">
                         <div class="card  col-6 col-sm-3"><p><i class="fa fa-award" style='color:#18b5e0'></i></p>
@@ -570,7 +575,7 @@ margin-bottom: 10%;
                 
                     </div>
                 </div>
-                <div class="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex text-center" style="margin-top: 2%;">
+                <div class="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex" style="margin-top: 2%;">
                     <div class="card">
                       <p><i class="fa fa-award" style='color:#18b5e0'></i></p>
                       <h3>1 year</h3>
@@ -589,14 +594,13 @@ margin-bottom: 10%;
                   
                 </div>
             
-            
            </div>
         </div> 
         <!-- Skill Section -->
-       <!-- Skill Section -->
-       <hr class="bg-gray-300" style="margin-bottom: 5%; margin-left: 6%; margin-right: 6%; margin-top: 5%;" >
-        <div class="container mt-5" id="Skill" >
-            <p class="fs-3 fw-bold text-black p1 text-center">
+    </div>   <!-- Skill Section -->
+    <hr class="bg-gray-300" style="margin-bottom: 5%; margin-left: 6%; margin-right: 6%; margin-top: 5%;" >
+    <div class="container mt-5" id="Skill" >
+            <p class="fs-3 fw-bold  p1 text-center" style="color: white;">
                 <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i> Skills
             </p>
             <br class="d-md-none">
@@ -786,7 +790,7 @@ margin-bottom: 10%;
 
             <hr class="bg-gray-300" style="margin-bottom: 5%; margin-top: 10%;">
             <div>
-                <p class="fs-3 fw-bold text-black p1 text-center">
+                <p class="fs-3 fw-bold  p1 text-center" style="color: white;">
                     <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i> Qualifications
                 </p>
                 <br class="d-md-none">
@@ -861,7 +865,7 @@ margin-bottom: 10%;
         <div class="row vertical-center">
             <div class="col-md-4" style="margin-bottom: 2%;">
                 <div class="hidden sm:block">
-                    <h2 class="fs-3 fw-bold text-black p1 me">
+                    <h2 class="fs-3 fw-bold  p1 me" style="color: white;">
                         <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
                     </h2>
                     <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
@@ -875,13 +879,13 @@ margin-bottom: 10%;
                 </div>
                   
             </div>
-            <div class="col-md-5  text-center"style="margin-bottom: 2%;"   >
+            <div class="col-md-5  text-center text-white"style="margin-bottom: 2%;"   >
             
                 
-               <a href="https://github.com/iam-agyenim"><i class="fab fa-github whatsapp1"></i></a>
-                        <a href="https://www.facebook.com/share/KcJtmwsssJZLoAaT/?mibextid=YMEMSu"><i class="fab fa-facebook whatsapp1"></i></a>
-                        <a href="https://x.com/Agyenim73210404"><i class="fab fa-twitter whatsapp1"></i></a>
-                        <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr"><i class="fab fa-instagram whatsapp1"></i></a>
+                <a href="#"><i class="fab fa-github  whatsapp1"></i></a>
+                <a href="#"><i class="fab fa-facebook whatsapp1"></i></a>
+                <a href="#"><i class="fab fa-twitter whatsapp1"></i></a>
+                <a href="#"><i class="fab fa-instagram whatsapp1"></i></a>
             </div>
         </div>
     
@@ -903,6 +907,7 @@ function closeMenuAndRedirect(url) {
     window.location.href = url;
 }
 
+particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#201b1e"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
 
     function scrollToSkills() {
       // Scroll to the skills section smoothly
