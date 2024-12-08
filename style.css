@@ -18,7 +18,7 @@ body {
     position: absolute;
     width: 100%;
     display: flex;
-    height: calc(100vh - 80px); /* Ensure it takes the full viewport height */
+    height: calc(100vh - 10vh); /* Ensure it takes the full viewport height */
     justify-content: center;
     align-items: center;
     overflow-y: auto;
@@ -334,15 +334,13 @@ pointer-events: auto; /* Enable interactivity for footer elements */
     }
    
 
-
-
     .portal {
         width: 250px;
         height: 250px;
     }
 
-    .slider-content h1 {
-        font-size: 2.5rem;
+    .slider-content h2 {
+        font-size: 1.5rem;
     }
 
     .slider-content p {
