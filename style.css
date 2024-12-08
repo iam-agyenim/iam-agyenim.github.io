@@ -302,6 +302,10 @@ pointer-events: auto; /* Enable interactivity for footer elements */
         padding: 8px 16px;
         font-size: 1rem;
     }
+     .scroll-indicator{
+        display: none;
+    }
+}
 }
 
 
