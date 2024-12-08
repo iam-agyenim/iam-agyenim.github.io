@@ -3,926 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iam_agyenim</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet"  href="style1.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Portal Effect Slider</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <style>
-        body {
-            overflow-x: hidden;
-           
-        }
-        
-        
-
-        .p1 {
-            font-family: "Times New Roman", Times, serif;
-        }
-
-        .profile-section {
-            display: flex;
-            margin-bottom: 50px;
-            margin-top: -5%;
-        }
-
-        .profile-image {
-            width: 400px;
-        height: 400px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-right: 20px;
-        position: relative;
-        
-        }
-
-        .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: Flow 5s infinite alternate;
-    border-radius: 50%;
-    position: relative;
-}
-
-.profile-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1e293b; /* Adjust the opacity as needed */
-    opacity:30% ;
-    border-radius: 50%;
-    animation: Flow 5s infinite alternate;
-    z-index: 10;
-}
-
-@keyframes Flow {
-    0% {
-        border-radius: 50%;
-    }
-    25% {
-        border-radius: 78% 22% 83% 17% / 38% 67% 33% 62%;
-    }
-    75% {
-        border-radius: 78% 22% 56% 44% / 38% 45% 55% 62%;
-    }
-    100% {
-        border-radius: 50%;
-    }
-}
-
-        
-        
-
-        .Home-content {
-            flex: 1;
-        }
-
-        @media (max-width: 992px) {
-            .profile-section {
-                flex-direction: column;
-                margin-top: 40%;
-                align-items: center;
-                align-content: center;
-            }
-
-            .profile-image {
-                width: 300px;
-                height: 300px;
-                margin-right: 0;
-                margin-bottom: 20px;
-                margin-left: -10%;
-            }
-        }
-
-        .vertical-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .vertical {
-            border-left: 2px solid black;
-            height: 50px;
-            position: relative;
-            margin: 0 auto;
-            margin-left: 50%;
-        }
-
-        .social-media-container {
-        position: absolute;
-        margin-left: -3%;
-        margin-top: 2%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        }
-
-        .social-media {
-            font-size: 24px;
-            display: flex;
-            flex-direction: row;
-            
-        
-        }
-
-        .social-media a {
-            color: white;
-            text-decoration: none;
-            margin: 10px 50px;
-        }
-        .social-media a:hover{
-            color: #00abf0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .skill-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-            
-        }
-
-        .skill {
-            margin: 0 20px;
-            width: 160px;
-            height: 160px;
-            position: relative;
-        }
-
-        .outer {
-            height: 160px;
-            width: 160px;
-            border-radius: 50%;
-            padding: 20px;
-            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-        }
-
-        .inner {
-            height: 120px;
-            width: 120px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-        }
-
-        #number {
-            font-weight: 600;
-            color: #555;
-        }
-
-       .arrow{
-        position : absolute;
-        top: 90%;
-        left: 90%;
-       }
-       .arrow2{
-        position : absolute;
-        top: 150%;
-        left: 90%;
-       }
-
-        @media (max-width: 1024px) {
-            .social-media {
-                position: static;
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-            }
-            .social-media a {
-                margin-left: 20px;
-            }
-            .skill-container {
-                flex-wrap: wrap;
-            }
-            .skill {
-                margin: 20px 0;
-            }
-            .arrow2{
-            position : absolute;
-            top: 145%;
-            left: 90%;
-            
-       }
-       .gape{
-            margin-bottom: 2%;
-            margin-top: -1%;
-        }
-        }
-
-        @media (max-width: 768px) {
-            .text-container {
-                margin-top: 50px;
-            }
-            .me{
-            margin-top: 8%;
-        }
-        .skilling{
-            margin-right: 10px;
-        }
-        .gape{
-            margin-bottom: 2%;
-            margin-top: -1%;
-        }
-                .about-me {
-                flex-direction: column; /* Display elements vertically */
-            }
-            
-            .profile-picture img {
-                width: 80px; /* Decrease width of profile picture for smaller screens */
-            }
-
-            .about-text {
-                margin-top: 20px; /* Add margin between profile picture and text */
-            }
-        }
-
-        @media (max-width: 576px){
-        body{
-            margin-left:10%;
-        } 
-
-        
-    
-            .text-container {
-                margin-top: 20px;
-            }
-            
-           
-        .me{
-            margin-top: 8%;
-        }
-        .gape{
-            margin-bottom: 4%;
-        }
-        
-        }
-        .whatsapp{
-            text-decoration:none;
-        
-        }
-        .whatsapp:hover{
-            color: #00abf0;
-        }
-
-        .whatsapp1{
-            text-decoration:none;
-            margin-right: 30px;
-            font-size: 24px;
-            padding: 5px;
-            
-        
-        }
-        .whatsapp1:hover{
-            color: #00abf0;
-           
-        }
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script> <!-- Hammer.js CDN -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
    
-        .about-me {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.profile-picture {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: auto;
-}
 
-.profile-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.about-text {
-  flex: 1;
-  padding-left: 20px;
-}
-
-.stats {
-  display: flex;
-}
-
-.card {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
-}
-
-/* Animation */
-.about-me {
-  animation: slide-in 1s ease-out;
-}
-
-.stats .card {
-  animation: fade-in 1s ease-out;
-}
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fa {font-size:50px;}
-
-.menu-content a span {
-    margin-right: 10px;
-}
-
-.menu-div{
-    position: fixed;
-display: flex;
-align-items: center; 
-justify-content: center;
-height: 30px;
-width: 200px;
-padding: 10px 0px 10px;
-z-index: 100%;
-margin-bottom: 10%;
-
-}
-.sidebar a {
-    display: block; /* Adjust as needed */
-    text-decoration: none;
-    margin-bottom: 10px; /* Adjust as needed */
-}
-.menu-content a{
-    position:relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
-    border-radius: 28px;
-    width: 50%;
-    margin-top: 10px;
-    font-size: 20px;
-    margin-left: 20%;
    
-}
-.menu-content a:hover ::before{
-    background: #86c1e9;
-    transition: background 0.5s;
-    text-decoration: none;
-}
-
-
-.menu-backdrop {
-    position: sticky;
-    top: 17px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    cursor: pointer;
-    z-index: 1;/* Ensure the backdrop stays on top */
-}
-
-.menu-content a span {
-   font-size: 32px;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Initially hide the sidebar off the screen */
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.5);
-    color:white;
-    padding: 20px;
-    transition: left 0.3s ease;
-    z-index: 999; /* Ensure the sidebar stays on top */
-    overflow-y: hidden; /* Enable vertical scrollbar */
-    height: 100%;
-}
-
-.sidebar.open {
-    left: 0; /* Show the sidebar */
-}
-.sidebar-header {
-    position: fixed;
-    top: 18px;
-     /* Add border to separate header from content */
-   
-    bottom: 10px; /* Ensure the header stays on top of the content */
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    display: none; /* Initially hidden */
-    z-index: 998; /* Ensure the overlay is below the sidebar */
-}
-/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:fixed; top:0; z-index: -5; width: 100%; height: 100%; background-color: #081b29; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: transparent; position: absolute; top: 48px; left: 0; width: 80px; color: transparent; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
-    </style>
 </head>
 <body>
-    <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    <div  class="container " style="background-color: transparent; color: white;" >
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <p class="navbar-brand fs-6 fw-bold text-white">
-                    <div class="spinner-grow 
-                      mr-1" style="color: #00abf0;" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div> iam_agyenim
-                </p>
-                <div class="block sm:hidden menu-backdrop" onclick="toggleMenu()">
-                    <span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
-                </div>
-                <nav class="block sm:hidden sidebar">
-                    <span class="material-symbols-outlined" style="color: #00abf0;" onclick="toggleMenu()">
-                        disabled_by_default
-                    </span>
-                    <hr class="" style="margin-bottom: 10%; margin-top: 10%; color: transparent;">
-                    <div class="menu-content text-sm ">
-                        <a href="#about" onclick="closeMenuAndRedirect('#about')">
-                            <span class="material-symbols-outlined text-bold"style="color: #00abf0;">account_circle</span>About
-                        </a>
-                        <a href="Resume.pdf" onclick="closeMenuAndRedirect('RES.pdf')">
-                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">picture_as_pdf</span>Resume
-                        </a>
-                        <a href="portfolio.html" onclick="closeMenuAndRedirect('portfolio.html')">
-                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">workspace_premium</span>Project
-                        </a>
-                        <a href="contact.html" onclick="closeMenuAndRedirect('contact.html')">
-                            <span class="material-symbols-outlined text-bold" style="color: #00abf0;">contact_support</span>Contact
-                        </a>
-                    </div>
-                
-                    <p class="text-sm  text-white text-center" style="margin-top: 20%;">iam_agyenim<span class="material-symbols-outlined" style="color: #00abf0;">
-                        copyright
-                        </span>
-                    </p>
-                    <p class="text-sm text-center text-white">NYU</p>
-                </nav>
-                <div class="overlay" onclick="toggleMenu()"></div>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-                    <ul class="navbar-nav fs-6 " >
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" style="color: white;" href="#about">About |</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank"  style="color: white;"href="Resume.pdf">Resume |</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white;" href="portfolio.html">Project | </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white;" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Div with circle containing picture and text -->
-        <section class="profile-section Home" >
-            <div class="profile-image " >
-                <img  src="Rich.jpeg" alt="Profile Picture">
-            </div>
-           
-            <div class="Home-content" style="color: white;">
-                <h1> Richmond Agyenim-Boateng</h1>
-                <h3><i class='bx bx-collapse-alt bx-spin' style='color:#18b5e0'></i> Fullstack Developer</h3>
-                <p class="text-secondary">A computer science major student at New York University</p>
-                <div class="btn-box">
-                    <a href="portfolio.html">Project</a>
-                    <a target="_blank" href="Resume.pdf">Resume</a>
-                </div>
-                <div class="social-media-container " style="margin-bottom: 1%;">
-                    <div class="social-media ">
-                        <a href="https://github.com/iam-agyenim"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/share/KcJtmwsssJZLoAaT/?mibextid=YMEMSu"><i class="fab fa-facebook"></i></a>
-                        <a href="https://x.com/Agyenim73210404"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-               
-                
-            </div>
-            <a href="#about" onclick="scrollToSkills()"><i class='hidden sm:hidden md:hidden lg:block xl:block 2xl:hidden  fas fa-arrow-circle-down arrow animate-bounce' style='font-size:32px; color: #00abf0;'></i></a>
-              <!-- Social media icons -->
-       
-        </section>
-    </div>    
+    <div class="slider-container" id="slider-container">
+        <video autoplay muted loop id="video-bg">
+            <source src="m.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay"></div>
         
-    <hr class="bg-gray-300" id="about" style="margin-bottom: 5%; ">
-    <div class="container  about-me  " >
-            <div class="profile-picture col-md-6">
-                <img src="selfi.jpeg" alt="Profile Picture">
-            </div>
-            <div class="about-text col-md-6 col-sm-4 ">
-                <h2 class="fs-3 fw-bold text-black p1 hidden sm:hidden md:hidden lg:block"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
-                <h2 class="fs-3 fw-bold text-black p1 text-center block sm:block md:block lg:hidden"><i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i>About Me</h2>
-                <p><strong>Richmond Agyenim-Boateng</strong>, a computer science major at New York University, is a tech enthusiast eager to explore software development and machine learning engineering. He embraces new technologies and seeks opportunities to apply his knowledge.</p><br>
-                <p>With a solid foundation in computer science principles, He is passionate about leveraging technology to solve real-world problems and enhance lives. He  excited about the challenges and possibilities that lie ahead in the dynamic field of technology.</p><br>
-                
-                <div class="container text-center block sm:hidden">
-                    <div class="row">
-                        <div class="card  col-6 col-sm-3 sm-mr-4"><p><i class="fa fa-award" style='color:#18b5e0'></i></p>
-                            <h3>1 year</h3>
-                            <p>Experience</p></div>
-                            <div class="w-100"></div><br>
-                            <div class="card  col-6 col-sm-3"> <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
-                                <h3>3+</h3>
-                                <p>Projects</p>
-                            </div>
-                                <div class="w-100"></div><br>
-                                <div class=" card col-6 col-sm-3"> <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
-                                    <h3>10+</h3>
-                                    <p>Endorsement</p>
-                                </div>
+        <div class="logo">R<span class="material-symbols-outlined">blur_on</span></div>
 
-                        </div>
-                
-                    </div>
-                </div>
-                <div class="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex" style="margin-top: 2%;">
-                    <div class="card">
-                      <p><i class="fa fa-award" style='color:#18b5e0'></i></p>
-                      <h3>1 year</h3>
-                      <p>Experience</p>
-                    </div>
-                    <div class="card">
-                      <p><i class="fa fa-check" style='color:#18b5e0'></i></p>
-                      <h3>3+</h3>
-                      <p>Projects</p>
-                    </div>
-                    <div class="card"  >
-                      <p><i class="fas fa-vote-yea" style='color:#18b5e0; font-size:50px;'></i></p>
-                      <h3>10+</h3>
-                      <p>Endorsement</p>
-                    </div>
-                  
-                </div>
-            
-           </div>
-        </div> 
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         
-        <!-- Skill Section -->
-    </div>   <!-- Skill Section -->
-    <hr class="bg-gray-300" style="margin-bottom: 5%; margin-left: 6%; margin-right: 6%; margin-top: 5%;" >
-    <div class="container mt-5" id="Skill" >
-            <p class="fs-3 fw-bold  p1 text-center" style="color: white;">
-                <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i> Skills
-            </p>
-            <br class="d-md-none">
-            <p>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-12">
-                    <div class="card text-center p-4 ">
-                        <figcaption class="text-center blockquote-footer " style="margin-bottom: 10%;">
-                            Frontend Developer
-                        </figcaption>
-                        <div class="row text-sm ">
-                            <div class="col-md-6 col-sm-6 ">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        HTML
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        CSS
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        JavaScript
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #00abf0;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 md-w-1/2">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Bootstrap CSS
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Tailwind CSS
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        GitHub
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #00abf0;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-sm-12">
-                    <div class="card text-center p-4">
-                        <figcaption class="text-center blockquote-footer" style="margin-bottom: 10%;">
-                            Backend Developer
-                        </figcaption>
-                        <div class="row text-sm">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Python
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 80%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Advanced</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        API
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        PIP
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 65%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        SQL
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        RESTful APIs
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                                <div class="skill">
-                                    <h5 class="card-title flex justify-content-center  items-center">
-                                        <svg class="h-3 fill-current text-secondary mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                        </svg>
-                                        Flask
-                                    </h5>
-                                    <div class="progress skilling">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #00abf0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                    <p class="text-center mt-2">Intermediate</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
+        <div class="menu">
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('qualifications')">Qualifications</a>
+            <a href="#" onclick="showSection('projects')">Projects</a>
+            <a href="#" onclick="showSection('contact')">Get in Touch</a>
+        </div>
         
-
-
-
-
-            <hr class="bg-gray-300" style="margin-bottom: 5%; margin-top: 10%;">
+        <div id="home" class="slider-content">
+            <div class="portal">
+                <div class="portal-overlay"></div>
+            </div>            
             <div>
-                <p class="fs-3 fw-bold  p1 text-center" style="color: white;">
-                    <i class="fas fs-4 fa-circle" style="margin-top: -10%; margin-bottom: 3%; color:#18b5e0;"></i> Qualifications
-                </p>
-                <br class="d-md-none">
-                <p>
-                    <figcaption class="text-center blockquote-footer">
-                        Education || Experience
-                    </figcaption>
-                </p>
-                <div class="row vertical-center" >
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Computer Science
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        New York University
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        May, 2027
-                                    </figcaption>
-                                </p>
-                                <p class="vertical"></p>
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">High School Diploma
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        St.James Seminary Senior High
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        September, 2021
-                                    </figcaption>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Web Developer
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        Faith Life Embassy
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        2024 - Present
-                                    </figcaption>
-                                </p>
-                                <p class="vertical"></p>
-                                <p class="card-text fs-4 text-center" style="margin-top: 4%;">Mentor
-                                    <figcaption class="text-center mt-1 blockquote-footer">
-                                        Yaf Ghana
-                                    </figcaption>
-                                </p>
-                                <p>
-                                    <figcaption class="text-center  blockquote-footer">
-                                        2023 - Present
-                                    </figcaption>
-                                </p>
-                                <a href="#Main" onclick="scrollToQualification()"><i class='hidden sm:hidden md:hidden lg:block xl:block 2xl:block fas fa-arrow-circle-up arrow2 animate-bounce' style='font-size:32px; color: #00abf0;'></i></a>
-                                <!-- Social media icons -->
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            
-        </div>  
-            <hr class="bg-gray-300" style="margin-bottom: 2%; margin-top: 10%;">
-        <div class="row vertical-center">
-            <div class="col-md-4" style="margin-bottom: 2%;">
-                <div class="hidden sm:block">
-                    <h2 class="fs-3 fw-bold  p1 me" style="color: white;">
-                        <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
-                    </h2>
-                    <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
-                </div>
-                
-                <div class="block sm:hidden text-center">
-                    <h2 class="fs-3 fw-bold text-white p1 me">
-                        <i class="fas fs-4 fa-circle" style="margin-bottom: 4%; color:#18b5e0" id="skill"></i> Connect
-                    </h2>
-                    <p class="text-sm text-secondary" style="margin-bottom: 1%">Looking forward to connecting with you.</p>
-                </div>
-                  
-            </div>
-            <div class="col-md-5  text-center text-white"style="margin-bottom: 2%;"   >
-            
-                
-                <a href="https://github.com/iam-agyenim"><i class="fab fa-github  whatsapp1"></i></a>
-                <a href="https://www.facebook.com/share/KcJtmwsssJZLoAaT/?mibextid=YMEMSu"><i class="fab fa-facebook whatsapp1"></i></a>
-                <a href="https://x.com/Agyenim73210404"><i class="fab fa-twitter whatsapp1"></i></a>
-                <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr"><i class="fab fa-instagram whatsapp1"></i></a>
+                <h2>Richmond Agyenim-Boateng</h2>
+                <p style="margin-top: -2%;"><span class="typed"  data-typed-items="Software Developer, Designer, Musician"></span></p>
+                <a href="https://drive.google.com/file/d/1TZl3N_eWxrNIgy0yJ4Y6V9IxWS8ZmLSU/view?usp=sharing" class="learn-more" >Resume</a>
+
             </div>
         </div>
-    
+
+        <div id="about" class="slider-content about-section" style="display: flex;">
+            
+            <div class="about-text">
+                <div class="about-image"></div><h2>Richmond Agyenim-Boateng</h2>
+                <p style="margin-top: -2%;"><span class="typed1" data-typed-items="Software Developer, Designer, Musician"></span></p>
+                <p>I'm a passionate Software Engineer with experience in various programming languages, frameworks, and developer tools. I love building innovative solutions to real-world problems and continuously improving my skills.</p>
+                <div class="skills">
+                    <i class="devicon-cplusplus-plain skill-icon" title="C++"></i>
+                    <i class="devicon-python-plain skill-icon" title="Python"></i>
+                    <i class="devicon-csharp-plain skill-icon" title="C#"></i>
+                    <i class="devicon-mysql-plain skill-icon" title="SQL"></i>
+                    <i class="devicon-javascript-plain skill-icon" title="JavaScript"></i>
+                    <i class="devicon-html5-plain skill-icon" title="HTML"></i>
+                    <i class="devicon-css3-plain skill-icon" title="CSS3"></i>
+                    <i class="devicon-nodejs-plain skill-icon" title="Node.js"></i>
+                    <i class="devicon-react-original skill-icon" title="React"></i>
+                    <i class="fab fa-unity skill-icon" title="Unity"></i>
+                    <i class="fab fa-github skill-icon" title="GitHub"></i> <!-- GitHub icon -->
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="qualifications" class="slider-content qualification-section" style="display: none;">
+            <div class="row vertical-center">
+                <!-- Left Column with Education -->
+                <div class="col-md-6">
+                    <div class="vertical-title">Education</div>
+                    <div class="card-body card">
+                        <p class="card-text fs-4 text-center text-black" style="margin-top: 4%;">Computer Science</p>
+                        <figcaption class="text-center mt-1 blockquote-footer">
+                            New York University
+                        </figcaption>
+                        <figcaption class="text-center blockquote-footer">
+                            May, 2027
+                        </figcaption>
+                    </div>
+                    <p class="vertical"></p>
+                    <div class="card-body card" style="margin-top: -5%;">
+                        <p class="card-text fs-4 text-center text-black" style="margin-top: 4%;">High School Diploma</p>
+                        <figcaption class="text-center mt-1 blockquote-footer">
+                            St. James Seminary Senior High
+                        </figcaption>
+                        <figcaption class="text-center blockquote-footer">
+                            September, 2021
+                        </figcaption>
+                    </div>
+                </div>
+        
+                <!-- Right Column with Experience -->
+                <div class="col-md-6">
+                    <div class="vertical-title-experience">Experience</div>
+                    <div class="card-body card">
+                        <p class="card-text fs-4 text-center text-black" style="margin-top: 4%;">Web Developer</p>
+                        <figcaption class="text-center mt-1 blockquote-footer">
+                            NYUAD(Prof. Gatchell)
+                        </figcaption>
+                        <figcaption class="text-center blockquote-footer">
+                            November 2024 - Present
+                        </figcaption>
+                    </div>
+                    <p class="vertical"></p>
+                    <div class="card-body card" style="margin-top: -5%;">
+                        <p class="card-text fs-4 text-center text-black" style="margin-top: 4%;">IT Intern</p>
+                        <figcaption class="text-center mt-1 blockquote-footer">
+                            Yaf Ghana
+                        </figcaption>
+                        <figcaption class="text-center blockquote-footer">
+                           June 2024 -  August 2024
+                        </figcaption>
+                    </div>
+                    <p class="vertical"></p>
+                    <div class="card-body card" style="margin-top: -5%;">
+                        <p class="card-text fs-4 text-center text-black" >Frontend Developer</p>
+                        <figcaption class="text-center mt-1 blockquote-footer">
+                            Unibox
+                        </figcaption>
+                        <figcaption class="text-center blockquote-footer">
+                           June 2023 -  August 2023
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="projects" class="slider-content project-container">
+            <div class="project-card" id="project-1">
+                <img src="Project1.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+                <p class="text-white text-sm">Follow Up -> <a href="" class="github-link" target="_blank">GitHub</a></p>
+            </div>
+            <div class="project-card" id="project-2">
+                <img src="hand-gesture.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+                <p class="text-white text-sm">Follow Up -> <a href="" class="github-link" target="_blank">GitHub</a></p>
+            </div>
+            <div class="project-card" id="project-3">
+                <img src="image-detector.png" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of Project 3</p>
+                <p class="text-white text-sm">Follow Up -> <a href="" class="github-link" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        
+        
+
+        <div id="contact" class="slider-content get-in-touch-container" style="display: none;">
+            <h3 style="color:#f1c40f;">Get In Touch</h3>
+            <p class="contact-description">Feel free to reach out to me for collaborations, questions, or just to say hello! I'm always open to new opportunities.</p>
+            <form action="https://formspree.io/f/xjkvdklr" method="POST" class="contact-form" >
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" style="color: #000;" required placeholder="Your Message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        
+        <!-- Invisible line and footer section -->
+        <div class="footer-container">
+            <div class="slider-navigation">
+                <span onclick="changeSlide(0)" onmouseover="previewSlide(0)"></span>
+                <span onclick="changeSlide(1)" onmouseover="previewSlide(1)"></span>
+                <span onclick="changeSlide(2)" onmouseover="previewSlide(2)"></span>
+                <span onclick="changeSlide(3)" onmouseover="previewSlide(3)"></span>
+                <span onclick="changeSlide(4)" onmouseover="previewSlide(4)"></span>
+            </div>
+        
+           
+        
+            <div class="scroll-indicator">
+                <span class="material-symbols-outlined">stat_3</span>
+                <p>Click & Swipe up to switch</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/iam-agyenim" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/Agyenim73210404" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/share/KcJtmwsssJZLoAaT/?mibextid=YMEMSu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        
+        
     </div>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script>
-   function toggleMenu() {
-    var sidebar = document.querySelector('.sidebar');
-    var overlay = document.querySelector('.overlay');
-    sidebar.classList.toggle('open'); // Toggle the 'open' class on the sidebar
-    overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none'; // Toggle the overlay
-}
 
-function closeMenuAndRedirect(url) {
-    var sidebar = document.querySelector('.sidebar');
-    var overlay = document.querySelector('.overlay');
-    sidebar.classList.remove('open'); // Remove the 'open' class from the sidebar
-    overlay.style.display = 'none'; // Hide the overlay
-    window.location.href = url;
-}
+document.addEventListener("DOMContentLoaded", function() {
+ var options = {
+     strings: ["I'm a Software Developer", "I'm a Designer", "I'm a Musician"],
+     typeSpeed: 100,   // Speed at which it types
+     backSpeed: 50,    // Speed at which it erases
+     backDelay: 1000,  // Delay before erasing starts
+     startDelay: 500,  // Delay before typing starts
+     loop: true        // Keep looping the strings
+ };
 
-particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#201b1e"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+ var typed = new Typed(".typed", options);
+});
 
-    function scrollToSkills() {
-      // Scroll to the skills section smoothly
-      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-    }
-    function scrollToQualification(){
-        document.getElementById('Main').scrollIntoView({ behavior: 'smooth' }); 
-    }
+document.addEventListener("DOMContentLoaded", function() {
+ var options = {
+     strings: ["I'm a Software Developer", "I'm a Designer", "I'm a Musician"],
+     typeSpeed: 100,   // Speed at which it types
+     backSpeed: 50,    // Speed at which it erases
+     backDelay: 1000,  // Delay before erasing starts
+     startDelay: 500,  // Delay before typing starts
+     loop: true        // Keep looping the strings
+ };
+
+ var typed = new Typed(".typed1", options);
+});
+
 </script>
+<script src="script.js"></script>
+<script src="typed.js/typed.umd.js"></script>
 
+     
 </body>
 </html>
-    
