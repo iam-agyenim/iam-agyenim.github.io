@@ -109,7 +109,7 @@ left: 0;
 right: 0;
 width: 100%;
 color: white;
-background-color: #f1c40f;
+background-color:#9e9a9a ;
 padding: 20px;
 border-radius: 8px;
 z-index: 500;
@@ -253,7 +253,7 @@ pointer-events: auto; /* Enable interactivity for footer elements */
     animation: Flow 5s infinite alternate;
     z-index: 10;
 }
-     .hamburger {
+    .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -324,7 +324,7 @@ pointer-events: auto; /* Enable interactivity for footer elements */
         background-color: transparent; /* Use semi-transparent background */
         padding: 20px;
         border-radius: 8px;
-        z-index: 1000;
+        z-index: 999;
         animation: slideIn 0.3s ease-in-out;
     }
     
@@ -332,6 +332,7 @@ pointer-events: auto; /* Enable interactivity for footer elements */
         margin-top: 20%;
         overflow-y: scroll;
     }
+   
 
 
 
@@ -366,8 +367,10 @@ pointer-events: auto; /* Enable interactivity for footer elements */
 /* Show hamburger on smaller screens */
 @media screen and (max-width: 768px) {
     /* Show the hamburger menu */
-    .hamburger {
+    .hamburger  {
         display: flex;
+       
+        
     }
 
     /* Hide the regular menu on smaller screens */
@@ -618,11 +621,7 @@ pointer-events: auto; /* Enable interactivity for footer elements */
 
 
 @media (max-width: 768px) {
-.qualification-section .row {
-    flex-direction: column; /* Stack columns on smaller screens */
-    text-align: center;
-    
-}
+
 .qualification-section .col-md-6 {
     margin-top: 40px;
      /* Add spacing between stacked columns */
