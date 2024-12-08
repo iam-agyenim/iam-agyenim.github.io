@@ -84,61 +84,120 @@ dot.addEventListener('click', () => changeSlide(index));
 dot.addEventListener('mouseover', () => previewSlide(index));
 });
 
-// Initialize Hammer.js
-const sliderContainer = document.getElementById('slider-container');
-const hammer = new Hammer(sliderContainer);
+// Check if the device is on a small screen
+function isMobileScreen() {
+    return window.innerWidth <= 768; // Adjust the threshold as needed
+}
 
-// Detect swipe up (change slide on swipe up)
-hammer.on('swipeup', function () {
-changeSlide(currentSlide + 1); // Swipe up changes to next slide
-});
+// Initialize Hammer.js only for larger screens
+function initializeSwipeEvents() {
+    const sliderContainer = document.getElementById('slider-container');
+    
+    // Destroy any existing Hammer instance
+    if (sliderContainer.hammerInstance) {
+        sliderContainer.hammerInstance.destroy();
+        sliderContainer.hammerInstance = null;
+    }
 
-// Detect swipe down (change slide on swipe down)
-hammer.on('swipedown', function () {
-changeSlide(currentSlide - 1); // Swipe down changes to previous slide
-});
+    if (!isMobileScreen()) {
+        // Add swipe functionality for larger screens
+        const hammer = new Hammer(sliderContainer);
+        hammer.on('swipeup', function () {
+            changeSlide(currentSlide + 1); // Swipe up changes to next slide
+        });
+        hammer.on('swipedown', function () {
+            changeSlide(currentSlide - 1); // Swipe down changes to previous slide
+        });
 
-// Mouse events for swipe functionality (without needing 'mousemove')
+        // Save the Hammer instance to clean up later
+        sliderContainer.hammerInstance = hammer;
+    }
+}
+
+// Initialize mouse events for larger screens
+function initializeMouseEvents() {
+    const sliderContainer = document.getElementById('slider-container');
+
+    // Remove existing listeners for smaller screens
+    if (isMobileScreen()) {
+        sliderContainer.removeEventListener('mousedown', handleMouseDown);
+        sliderContainer.removeEventListener('mouseup', handleMouseUp);
+        return;
+    }
+
+    // Add mouse listeners for larger screens
+    sliderContainer.addEventListener('mousedown', handleMouseDown);
+    sliderContainer.addEventListener('mouseup', handleMouseUp);
+}
+
+// Mouse event handlers
 let startY = null;
-
-// Detect mouse drag to simulate swipe
-sliderContainer.addEventListener('mousedown', (event) => {
-startY = event.clientY;
-});
-
-sliderContainer.addEventListener('mouseup', (event) => {
-if (startY === null) return; 
-
-const endY = event.clientY;
-if (startY - endY > 30) {  
- changeSlide(currentSlide + 1); // Swipe up
-} else if (endY - startY > 30) {  
- changeSlide(currentSlide - 1); // Swipe down
+function handleMouseDown(event) {
+    startY = event.clientY;
 }
-startY = null; 
-});
+function handleMouseUp(event) {
+    if (startY === null) return;
 
-// Detect touch start and touch end to simulate swipe on touch devices
-let touchStartY = null;
-
-sliderContainer.addEventListener('touchstart', (event) => {
-touchStartY = event.touches[0].clientY;
-});
-
-sliderContainer.addEventListener('touchend', (event) => {
-if (touchStartY === null) return;
-
-const touchEndY = event.changedTouches[0].clientY;
-if (touchStartY - touchEndY > 30) {
- changeSlide(currentSlide + 1); // Swipe up
-} else if (touchEndY - touchStartY > 30) {
- changeSlide(currentSlide - 1); // Swipe down
+    const endY = event.clientY;
+    if (startY - endY > 30) {
+        changeSlide(currentSlide + 1); // Swipe up
+    } else if (endY - startY > 30) {
+        changeSlide(currentSlide - 1); // Swipe down
+    }
+    startY = null;
 }
-touchStartY = null;
-});
+
+// Initialize touch events for larger screens
+function initializeTouchEvents() {
+    const sliderContainer = document.getElementById('slider-container');
+    let touchStartY = null;
+
+    // Remove touch events for smaller screens
+    if (isMobileScreen()) {
+        sliderContainer.removeEventListener('touchstart', handleTouchStart);
+        sliderContainer.removeEventListener('touchend', handleTouchEnd);
+        return;
+    }
+
+    // Add touch listeners for larger screens
+    sliderContainer.addEventListener('touchstart', handleTouchStart);
+    sliderContainer.addEventListener('touchend', handleTouchEnd);
+
+    function handleTouchStart(event) {
+        touchStartY = event.touches[0].clientY;
+    }
+
+    function handleTouchEnd(event) {
+        if (touchStartY === null) return;
+
+        const touchEndY = event.changedTouches[0].clientY;
+        if (touchStartY - touchEndY > 30) {
+            changeSlide(currentSlide + 1); // Swipe up
+        } else if (touchEndY - touchStartY > 30) {
+            changeSlide(currentSlide - 1); // Swipe down
+        }
+        touchStartY = null;
+    }
+}
+
+// Update swipe and mouse events on screen resize
+function onResize() {
+    initializeSwipeEvents();
+    initializeMouseEvents();
+    initializeTouchEvents();
+}
+
+// Add resize event listener
+window.addEventListener('resize', onResize);
+
+// Initial setup
+initializeSwipeEvents();
+initializeMouseEvents();
+initializeTouchEvents();
 
 // Initialize the first slide
 changeSlide(currentSlide);
+
 
 // Array of all project data
 const projectCards = [
