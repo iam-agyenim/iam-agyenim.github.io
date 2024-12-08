@@ -415,7 +415,7 @@ pointer-events: auto; /* Enable interactivity for footer elements */
     #home{
         display: flex;
         position: relative;
-        top: 10%;
+        top: 2%;
     }
     #contact{
         display: flex;
