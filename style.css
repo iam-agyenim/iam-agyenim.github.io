@@ -403,6 +403,21 @@ pointer-events: auto; /* Enable interactivity for footer elements */
         top: 10%;
         overflow-y: scroll;
     }
+    #about{
+        display: flex;
+        position: absolute;
+        top: 10%;
+    }
+    #home{
+        display: flex;
+        position: relative;
+        top: 10%;
+    }
+    #contact{
+        display: flex;
+        position: relative;
+        top: 10%;
+    }
 
 }
 @keyframes slideUpIn {
@@ -558,6 +573,22 @@ pointer-events: auto; /* Enable interactivity for footer elements */
 
     .skills {
         gap: 8px;
+    }
+    .Men {
+        backdrop-filter: blur(10px); /* Add blur effect */
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: white;
+        background-color: transparent; /* Use semi-transparent background */
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 1000;
+        animation: slideIn 0.3s ease-in-out;
     }
 }
 .vertical-center {
