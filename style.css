@@ -23,26 +23,17 @@ body {
     align-items: center;
     overflow-y: auto;
 }
-.fixed-video-bg {
+
+
+.slider-container video {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the video covers the entire viewport */
-    z-index: -10; /* Place the video behind other content */
-}
-
-
-/* .slider-container video {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -2;
-} */
+}
 
 .overlay {
     position: fixed;
