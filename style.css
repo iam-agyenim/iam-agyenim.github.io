@@ -399,13 +399,13 @@ pointer-events: auto; /* Enable interactivity for footer elements */
     .qualification-section{
         display: flex;
         top: 5%;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     #projects{
         display:flex;
         position: absolute;
         top: 10%;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     #about{
         display: flex;
@@ -419,8 +419,8 @@ pointer-events: auto; /* Enable interactivity for footer elements */
     }
     #contact{
         display: flex;
-        position: relative;
-        top: 10%;
+        position: absolute;
+        top: 12%;
     }
 
 }
