@@ -1,3 +1,3 @@
 # iam-agyenim.github.io
 
->This is my personal wensite
+>This is my personal potfolio
