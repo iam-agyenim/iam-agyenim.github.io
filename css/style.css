@@ -14,6 +14,7 @@
   --accent-soft: rgba(200, 71, 31, 0.14);
   --sq-light: #f8f3e9;
   --sq-dark: #ddcdaf;
+  --media: #ece2cf;
 
   --serif: "Fraunces", Georgia, serif;
   --sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
@@ -23,6 +24,25 @@
   --gutter: clamp(16px, 4vw, 48px);
   --max: 1240px;
   color-scheme: light;
+}
+
+/* Dark mode: follows the visitor's device setting. Warm charcoal, same red. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16130f;
+    --paper: #201c17;
+    --ink: #f1e9da;
+    --ink-2: #c9bfae;
+    --ink-3: #968c7e;
+    --line: rgba(241, 233, 218, 0.14);
+    --accent: #e2683e;
+    --accent-soft: rgba(226, 104, 62, 0.18);
+    --sq-light: #2b261f;
+    --sq-dark: #403729;
+    --media: #231f19;
+    color-scheme: dark;
+  }
+  body::before { opacity: 0.6; }
 }
 
 * { box-sizing: border-box; }
@@ -254,7 +274,7 @@ h3 { margin: 0; }
   background:
     linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 28px 28px,
     linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 28px 28px,
-    #ece2cf;
+    var(--media);
   border-bottom: 1px solid var(--line);
   display: grid; place-items: center; overflow: hidden;
 }
@@ -271,7 +291,7 @@ h3 { margin: 0; }
 @keyframes dash { to { stroke-dashoffset: -24; } }
 .project:hover .strings line:nth-child(3) { stroke: var(--accent); }
 .finger .bone { stroke-width: 9; }
-.finger circle { fill: #ece2cf; }
+.finger circle { fill: var(--media); }
 .hand-art line { stroke: var(--ink-2); stroke-width: 1.5; }
 .cards .card, .pipeline .slide { fill: var(--paper); }
 .cards .c2 { stroke: var(--accent); }
