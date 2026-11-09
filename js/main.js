@@ -50,6 +50,15 @@
     $('#disciplines').innerHTML = (site.disciplines || []).map(esc).join('<br />');
 
     // board headings
+    const about = data.about || {};
+    $('#about').hidden = !(about.text || '').trim();
+    $('#about-title').textContent = about.title || 'About';
+    $('#about-text').innerHTML = String(about.text || '').split(/\n\s*\n/).map((t) => t.trim()).filter(Boolean).map((t) => `<p>${esc(t)}</p>`).join('');
+    const exploring = String(about.exploring || '').split('\n').map((t) => t.trim()).filter(Boolean);
+    $('#about-exploring-wrap').hidden = !exploring.length;
+    $('#about-exploring-title').textContent = about.exploringTitle || 'Now exploring';
+    $('#about-exploring').innerHTML = exploring.map((t) => `<li>${esc(t)}</li>`).join('');
+
     $('#board-heading').textContent = board.title;
     $('#board-sub').textContent = board.subtitle;
 

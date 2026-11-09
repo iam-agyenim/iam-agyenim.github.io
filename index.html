@@ -21,8 +21,9 @@
   <header class="top">
     <a class="brand" href="#top" aria-label="Back to top"><i>R</i>a</a>
     <nav class="nav" aria-label="Sections">
-      <a href="#board">The board</a>
+      <a href="#about">About</a>
       <a href="#work">Work</a>
+      <a href="#board">The board</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -46,10 +47,36 @@
       </div>
     </section>
 
+    <!-- =========================================================== ABOUT -->
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <header class="section-head">
+        <p class="num mono">01</p>
+        <h2 id="about-title"></h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text" id="about-text"></div>
+        <aside class="about-exploring" id="about-exploring-wrap">
+          <p class="mono about-label" id="about-exploring-title"></p>
+          <ul id="about-exploring"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================ WORK -->
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="num mono">02</p>
+        <h2 id="work-title"></h2>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+      </header>
+      <div id="featured"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
     <!-- =========================================================== BOARD -->
     <section class="play wrap" id="board" aria-labelledby="board-title">
       <header class="section-head">
-        <p class="num mono">01</p>
+        <p class="num mono">03</p>
         <h2 id="board-title"><span id="board-heading"></span><br /><em id="board-sub"></em></h2>
       </header>
 
@@ -73,20 +100,9 @@
       </div>
     </section>
 
-    <!-- ============================================================ WORK -->
-    <section class="work wrap" id="work" aria-labelledby="work-title">
-      <header class="section-head">
-        <p class="num mono">02</p>
-        <h2 id="work-title"></h2>
-        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
-      </header>
-      <div id="featured"></div>
-      <div class="grid" id="grid"></div>
-    </section>
-
     <!-- ========================================================= CONTACT -->
     <section class="contact wrap" id="contact" aria-labelledby="contact-title">
-      <p class="num mono">03</p>
+      <p class="num mono">04</p>
       <h2 id="contact-title"></h2>
       <p class="lede" id="contact-text"></p>
       <a class="mail" id="contact-email" href="#"></a>

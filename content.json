@@ -1,28 +1,34 @@
 {
   "site": {
     "title": "Richmond Agyenim-Boateng",
-    "description": "Richmond Agyenim-Boateng is an artist and technologist working across installation, physical computing, VR and AI.",
+    "description": "Richmond Agyenim-Boateng is a product designer and creative technologist who designs and builds interactive objects and spaces that respond to people.",
     "firstName": "Richmond",
     "lastName": "Agyenim-Boateng",
     "roles": [
-      "Artist",
-      "Technologist"
+      "Product designer",
+      "Creative technologist"
     ],
     "places": "Ghana · Abu Dhabi · Paris · New York",
-    "quote": "Build it small, break it, and let it become what it wanted to be.",
+    "quote": "I want to keep building things that wake up when someone reaches for them.",
     "quoteAuthor": "Richmond",
     "disciplines": [
-      "Installation",
+      "Interactive products",
       "Physical computing",
-      "VR",
-      "AI"
+      "Installations",
+      "Interfaces & UX"
     ],
     "footer": "Built by hand, one move at a time."
+  },
+  "about": {
+    "title": "About",
+    "exploringTitle": "Now exploring",
+    "text": "I’m Richmond, an Interactive Media student at NYU Abu Dhabi, from Ghana. I design and build interactive objects and spaces that respond to people: a tent that wakes up when you open its gate, an instrument played on strings you can’t see, a robotic arm that follows your hand.\n\nI’m drawn to presence and the invisible, the small moments when an object or a room seems to notice you. I work across physical computing, interface design and code. I like to prototype quickly, test with people and let the work change along the way.\n\nI want to become a product designer for interactive products, the kind people touch, hold or move through, where the digital and the physical meet.",
+    "exploring": "How can an object respond to presence without screens or buttons?\nCan something invisible, like sound or a gesture, make a space feel personal?\nHow can playful, hands-on technology reach people far from places like New York?"
   },
   "board": {
     "title": "Every project is a piece.",
     "subtitle": "Pick one up.",
-    "introTitle": "Eight projects, eight pieces.",
+    "introTitle": "Every piece is a project.",
     "introText": "Each piece moves the way its project thinks. Click one to see its moves, then click a dot to play it."
   },
   "work": {
@@ -48,7 +54,7 @@
   ],
   "contact": {
     "title": "Your move.",
-    "text": "I'm open to collaborations and opportunities in installation, creative technology, VR and AI.",
+    "text": "I’m open to collaborations and opportunities in product design, creative technology and interactive installations.",
     "email": "ra4150@nyu.edu",
     "links": [
       {
@@ -585,6 +591,225 @@
       }
     },
     {
+      "id": "echoes-of-place",
+      "title": "Echoes of Place",
+      "featured": false,
+      "meta": "Site-specific sound artwork · with Areeba",
+      "categories": [
+        "physical"
+      ],
+      "pitch": "A dark room, a pair of headphones and the recorded sounds of a real place. Can you be somewhere without being there?",
+      "howTitle": "How I made it",
+      "how": [
+        "We recorded ambient sound and reflections at a real site and played them in a darkened room with waveforms and photos, then asked listeners to pin their reactions to the wall."
+      ],
+      "tools": [
+        "Field recording",
+        "Sound design",
+        "Projection"
+      ],
+      "links": [],
+      "media": {
+        "art": "",
+        "image": "assets/media/echoes-1.jpg",
+        "video": "",
+        "embed": "",
+        "alt": "Echoes of Place"
+      },
+      "piece": {
+        "type": "P",
+        "square": "g2",
+        "why": "You hear it before you see it.",
+        "promotion": ""
+      },
+      "doc": {
+        "time": 1793627734371,
+        "version": "2.31.7",
+        "blocks": [
+          {
+            "id": "cnyCcQTpGz",
+            "type": "paragraph",
+            "data": {
+              "text": "Richmond Agyenim-Boateng and Areeba · Site-specific sound artwork"
+            }
+          },
+          {
+            "id": "rJIBWTiGdw",
+            "type": "header",
+            "data": {
+              "text": "1. The idea",
+              "level": 2
+            }
+          },
+          {
+            "id": "4AtTQ2QVlW",
+            "type": "paragraph",
+            "data": {
+              "text": "Echoes of Place is a sound-based artwork about how spaces hold emotional memory. We recorded ambient sounds and spoken reflections at a real site, then invited listeners to experience that place again through sound alone."
+            }
+          },
+          {
+            "id": "EVnHu7nBJ9",
+            "type": "paragraph",
+            "data": {
+              "text": "It starts with one question. How does sound shape our perception of a place?"
+            }
+          },
+          {
+            "id": "kH3ggXfiT8",
+            "type": "header",
+            "data": {
+              "text": "My role",
+              "level": 3
+            }
+          },
+          {
+            "id": "8phungMGI6",
+            "type": "paragraph",
+            "data": {
+              "text": "I built the digital installation: the visuals that play in the dark room alongside the sound, such as the audio waveforms and photos of the site."
+            }
+          },
+          {
+            "id": "9ikWivJXSm",
+            "type": "header",
+            "data": {
+              "text": "2. The concept",
+              "level": 2
+            }
+          },
+          {
+            "id": "yB6vQudPKq",
+            "type": "list",
+            "data": {
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "A sound-based exploration of how spaces hold emotional memory.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "It combines ambient sounds and reflections recorded at a real site.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "It encourages listeners to re-experience familiar spaces through sound.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          },
+          {
+            "id": "YaSAa2wVKD",
+            "type": "image",
+            "data": {
+              "caption": "Our concept",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/echoes-3.jpg"
+              }
+            }
+          },
+          {
+            "id": "2jOnMgZlpz",
+            "type": "header",
+            "data": {
+              "text": "3. The experience",
+              "level": 2
+            }
+          },
+          {
+            "id": "EXV7txjqdT",
+            "type": "paragraph",
+            "data": {
+              "text": "Listeners are taken into a darkened room and given headphones. As they listen to each recording, subtle visuals play around them, such as the audio waveforms and photos of the site."
+            }
+          },
+          {
+            "id": "EKzjj7i9Y4",
+            "type": "paragraph",
+            "data": {
+              "text": "Afterwards, they reflect on how the sound made them feel, write their thoughts on a piece of paper, and pin it to the wall, so the room slowly fills with other people’s memories of the place."
+            }
+          },
+          {
+            "id": "vhEdHDw6JB",
+            "type": "image",
+            "data": {
+              "caption": "The experience: a listener in the dark room, with notes pinned to the wall",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/echoes-6.jpg"
+              }
+            }
+          },
+          {
+            "id": "7Az4izMC45",
+            "type": "header",
+            "data": {
+              "text": "4. Inspiration",
+              "level": 2
+            }
+          },
+          {
+            "id": "rxdvsilxDW",
+            "type": "paragraph",
+            "data": {
+              "text": "<b>[murmur]</b> by James Roussel, Shawn Micallef and Gabe Sawhney was a public sound project in Toronto. Signs at specific locations showed a phone number. When people called, they heard recorded memories from others who had been in that exact spot."
+            }
+          },
+          {
+            "id": "yJQpvUyPzL",
+            "type": "header",
+            "data": {
+              "text": "5. Intention",
+              "level": 2
+            }
+          },
+          {
+            "id": "AK2UNKieJn",
+            "type": "list",
+            "data": {
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "To recreate the invisible emotional geography of sound, how what we hear affects how we feel in a space.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "To blur the line between presence and memory, showing that sound alone can create a sense of location.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "To ask what makes a place feel real. Is it what we see, or what we hear around us?",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          },
+          {
+            "id": "WucEfIHLnd",
+            "type": "paragraph",
+            "data": {
+              "text": "<b>Can we experience a place without being physically present?</b>"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "air-harp",
       "title": "Air Harp",
       "featured": false,
@@ -806,10 +1031,38 @@
             }
           },
           {
-            "id": "VTmxCRakfQ",
-            "type": "paragraph",
+            "id": "2fJT9WwLUO",
+            "type": "list",
             "data": {
-              "text": "Board:&nbsp;Arduino UnoSensors:&nbsp;7 HC-SR04 ultrasonic distance sensorsSound:&nbsp;Ableton Live on a laptop [add how the notes reach Ableton, e.g. MIDI over USB]Body:&nbsp;A vertical box frame with the seven sensors in one straight line, worn on a neck strap, so the audience can clearly see my hand moving up and down.Visual feedback:&nbsp;LED lights or screen visuals that react every time a note plays [add which one you used]"
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "<b>Board.</b> Arduino Uno.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Sensors.</b> 7 HC-SR04 ultrasonic distance sensors.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Sound.</b> Ableton Live on a laptop.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Body.</b> A vertical box frame with the seven sensors in one straight line, worn on a neck strap, so the audience can clearly see my hand moving up and down.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Visual feedback.</b> LED lights or screen visuals that react every time a note plays.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
             }
           },
           {
@@ -929,13 +1182,6 @@
             }
           },
           {
-            "id": "lenXeWqczU",
-            "type": "paragraph",
-            "data": {
-              "text": "Pictures of the device:&nbsp;[add photos of the frame, and of you playing it]Circuit schematic:&nbsp;[add schematic]Code I'm really proud of:&nbsp;[add a short sentence, then the code block]"
-            }
-          },
-          {
             "id": "Iq36Vyne30",
             "type": "header",
             "data": {
@@ -966,6 +1212,855 @@
                   "items": []
                 }
               ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "robotic-arm",
+      "title": "Hand-Controlled Robotic Arm",
+      "featured": false,
+      "meta": "Creative Robotics & Technology · Computer vision",
+      "categories": [
+        "ai",
+        "physical"
+      ],
+      "pitch": "A robotic arm that follows your hand, with no controller.",
+      "howTitle": "How I made it",
+      "how": [
+        "A camera finds 21 points on a hand with MediaPipe and OpenCV. Gestures send a UFACTORY xArm to set positions, or the arm follows the wrist in real time."
+      ],
+      "tools": [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "xArm API"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/iam-agyenim/Hand-Gesture---Controlled-Robotic-Arm"
+        }
+      ],
+      "media": {
+        "art": "hand",
+        "image": "assets/media/images-3-aaa9de.jpg",
+        "video": "",
+        "embed": "",
+        "alt": ""
+      },
+      "piece": {
+        "type": "Q",
+        "square": "e5",
+        "why": "It goes anywhere your hand goes.",
+        "promotion": ""
+      },
+      "doc": {
+        "time": 1793621942804,
+        "version": "2.31.7",
+        "blocks": [
+          {
+            "id": "V1pomO2ZQy",
+            "type": "paragraph",
+            "data": {
+              "text": "Richmond Agyenim-Boateng, with Pavly Hamin and Dhyey · Creative Robotics &amp; Technology ·&nbsp;"
+            }
+          },
+          {
+            "id": "mX7abK7yOS",
+            "type": "embed",
+            "data": {
+              "url": "https://youtube.com/shorts/ZnMwG0VvUew?feature=share",
+              "caption": ""
+            }
+          },
+          {
+            "id": "lEr8kcQ47M",
+            "type": "header",
+            "data": {
+              "text": "1. The idea",
+              "level": 2
+            }
+          },
+          {
+            "id": "fSM8G40RXY",
+            "type": "paragraph",
+            "data": {
+              "text": "This project lets you control an industrial robotic arm with your bare hand. A webcam watches your hand, and the arm moves with it. There is no joystick, no controller and nothing to wear."
+            }
+          },
+          {
+            "id": "leyCd5jh75",
+            "type": "paragraph",
+            "data": {
+              "text": "Open your hand and the arm follows your wrist around the room. Close your hand into a fist and the arm swings to a set position, left or right depending on which hand you closed."
+            }
+          },
+          {
+            "id": "FrLEzrPSGk",
+            "type": "header",
+            "data": {
+              "text": "2. The concept",
+              "level": 2
+            }
+          },
+          {
+            "id": "FehkotQzfc",
+            "type": "paragraph",
+            "data": {
+              "text": "Industrial robots are usually programmed with code or steered with a pendant full of buttons. That puts a layer of technology between the person and the machine."
+            }
+          },
+          {
+            "id": "MJyITsMrjd",
+            "type": "paragraph",
+            "data": {
+              "text": "I wanted the arm to read the body directly. The hand is something everyone already knows how to use, so steering a robot with it feels natural from the first second. The question became how much a camera can understand from a hand alone, whether it is open or closed, where the wrist is and how far it has turned."
+            }
+          },
+          {
+            "id": "i9l1LuZma7",
+            "type": "header",
+            "data": {
+              "text": "3. The interaction",
+              "level": 2
+            }
+          },
+          {
+            "id": "AGvsZtadMZ",
+            "type": "table",
+            "data": {
+              "withHeadings": true,
+              "stretched": false,
+              "content": [
+                [
+                  "What I do",
+                  "What the arm does"
+                ],
+                [
+                  "Show an open hand and move it",
+                  "The arm follows the wrist in real time"
+                ],
+                [
+                  "Close my left hand",
+                  "The arm turns to −180°"
+                ],
+                [
+                  "Close my right hand",
+                  "The arm turns to +180°"
+                ],
+                [
+                  "Rotate my open hand",
+                  "The arm’s wrist joint rotates to match"
+                ],
+                [
+                  "Press Q",
+                  "Stops tracking and disconnects the arm"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "84W6nnNoSr",
+            "type": "paragraph",
+            "data": {
+              "text": "<b>An open hand steers, and a closed hand gives a command.</b>"
+            }
+          },
+          {
+            "id": "MUU6LVlQtz",
+            "type": "image",
+            "data": {
+              "caption": "The 21 points MediaPipe finds on a hand, and the ones my code uses",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/robotic-arm-hand-points.png"
+              }
+            }
+          },
+          {
+            "id": "pbIIw41TUg",
+            "type": "header",
+            "data": {
+              "text": "4. Technical implementation",
+              "level": 2
+            }
+          },
+          {
+            "id": "hF9Fe2nZPk",
+            "type": "list",
+            "data": {
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "<b>Language.</b> Python.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Hand tracking.</b> OpenCV reads the webcam, and MediaPipe Hands finds 21 points on each hand in every frame.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Robot.</b> A UFACTORY xArm, controlled over the network with the xArm Python SDK.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Three scripts.</b> <code>movement.py</code> follows the wrist, <code>rotation.py</code> matches the hand’s rotation, and <code>gesture.py</code> combines wrist following with the open and closed hand commands.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          },
+          {
+            "id": "a8dWugAa20",
+            "type": "header",
+            "data": {
+              "text": "How the hand becomes movement",
+              "level": 3
+            }
+          },
+          {
+            "id": "mvl1OBxnNh",
+            "type": "list",
+            "data": {
+              "style": "ordered",
+              "meta": {
+                "counterType": "numeric"
+              },
+              "items": [
+                {
+                  "content": "<b>Find the wrist.</b> The wrist point’s position in the camera image is scaled to a 1024 × 720 workspace.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Turn position into angles.</b> The distance from the centre of the image becomes joint angles for the arm.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Check open or closed.</b> If at least three fingertips are below their middle joints, the hand counts as closed.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Measure rotation.</b> The angle of the line between the index and pinky knuckles gives how far the hand has turned.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          },
+          {
+            "id": "41CwoVYwdf",
+            "type": "header",
+            "data": {
+              "text": "My role",
+              "level": 3
+            }
+          },
+          {
+            "id": "i1NAJvNlo6",
+            "type": "paragraph",
+            "data": {
+              "text": "This was a team project with Pavly Hamin and Dhyey. My part was the mapping, the code that turns where your hand is in the camera image into angles the robotic arm can move to."
+            }
+          },
+          {
+            "id": "TxJmL4GWkT",
+            "type": "header",
+            "data": {
+              "text": "Code I’m really proud of",
+              "level": 3
+            }
+          },
+          {
+            "id": "T1agM2yKPR",
+            "type": "paragraph",
+            "data": {
+              "text": "This is the mapping I built. The camera only knows where the wrist is in pixels, and the arm only understands joint angles. The function measures how far the wrist is from the centre of the image, scales that distance, and converts it into radians for the arm’s joints. Without it, the arm would have no way to follow a hand."
+            }
+          },
+          {
+            "id": "aR1TKIpc2U",
+            "type": "code",
+            "data": {
+              "language": "python",
+              "filename": "gesture.py",
+              "code": "def map_coordinates_to_angles(x, y, width, height):\n    x_normalized = (x - width / 2) / (width / 2) * 100\n    y_normalized = (y - height / 2) / (height / 2) * 100\n    min_angle_deg_x, max_angle_deg_x = -360, 360\n    min_angle_deg_y, max_angle_deg_y = -100, 100\n    x_angle = np.interp(x_normalized, [-1, 1], [min_angle_deg_x, max_angle_deg_x]) * DEGREES_TO_RADIANS\n    y_angle = np.interp(y_normalized, [-1, 1], [min_angle_deg_y, max_angle_deg_y]) * DEGREES_TO_RADIANS\n    return x_angle, y_angle"
+            }
+          },
+          {
+            "id": "A5nIsTsTEz",
+            "type": "header",
+            "data": {
+              "text": "5. Next steps",
+              "level": 2
+            }
+          },
+          {
+            "id": "HojUOHXz7G",
+            "type": "list",
+            "data": {
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "<b>Add the gripper,</b> so pinching your fingers opens and closes the arm’s hand.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Use depth,</b> so moving your hand toward the camera moves the arm forward.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Smooth the movement,</b> so small shakes of the hand don’t make the arm jitter.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "forming-presence",
+      "title": "Forming Presence",
+      "featured": false,
+      "meta": "Exhibition · Co-curator · Fall 2025",
+      "categories": [
+        "physical"
+      ],
+      "pitch": "An exhibition on what it means to be present, with four new works in conversation with Vera Molnar, Myron Krueger, exonemo and Behnaz Farahi.",
+      "howTitle": "How I made it",
+      "how": [
+        "I co-curated the exhibition with Ahmad, Jason and Mustafa, writing the curatorial statement, selecting four artists and proposing a work in response to each."
+      ],
+      "tools": [
+        "Curation",
+        "Exhibition design",
+        "p5.js",
+        "Interactive installation"
+      ],
+      "links": [],
+      "media": {
+        "art": "",
+        "image": "assets/media/presence-1.jpg",
+        "video": "",
+        "embed": "",
+        "alt": "Forming Presence"
+      },
+      "piece": {
+        "type": "P",
+        "square": "h2",
+        "why": "It holds the whole board together.",
+        "promotion": ""
+      },
+      "doc": {
+        "time": 1793627734371,
+        "version": "2.31.7",
+        "blocks": [
+          {
+            "id": "pKTeNocIta",
+            "type": "paragraph",
+            "data": {
+              "text": "Curated by Ahmad, Jason, Richmond and Mustafa · Exhibition catalogue · Fall 2025"
+            }
+          },
+          {
+            "id": "x9vFI5ZD01",
+            "type": "header",
+            "data": {
+              "text": "1. The idea",
+              "level": 2
+            }
+          },
+          {
+            "id": "trIichkIqy",
+            "type": "paragraph",
+            "data": {
+              "text": "Forming Presence is an exhibition I co-curated with Ahmad, Jason and Mustafa. We wrote the curatorial statement, chose four artists whose practice deals with presence, and proposed a new work in the spirit of each one. This catalogue brings it all together."
+            }
+          },
+          {
+            "id": "xBIQler65C",
+            "type": "header",
+            "data": {
+              "text": "My role",
+              "level": 3
+            }
+          },
+          {
+            "id": "RWPEdoL9Wv",
+            "type": "paragraph",
+            "data": {
+              "text": "Besides co-curating the exhibition, I built the digital installations and the p5.js artwork, including <i>Moments of Presence</i>, the series of grid prints generated with p5.js."
+            }
+          },
+          {
+            "id": "BrUC5UmOGS",
+            "type": "header",
+            "data": {
+              "text": "2. The curatorial statement",
+              "level": 2
+            }
+          },
+          {
+            "id": "eVs3SYJ5Cu",
+            "type": "paragraph",
+            "data": {
+              "text": "What does it mean to be present? Presence can be about the body, proof of our existence. It can be mental, a commitment of focus, or spiritual, a matter of belief. It is shaped by time and by space, by architecture, landscape and digital environments."
+            }
+          },
+          {
+            "id": "TTDS3GLDBY",
+            "type": "paragraph",
+            "data": {
+              "text": "Presence can also be felt in the smallest disruptions. A slight shift in a repeated form, or a pattern that wavers, can pull attention back into the moment. It also reveals itself through absence, in moments when body, mind and spirit fail to line up, a condition technology has made more common. The exhibition proposes that this fragmentation may itself be a form of presence."
+            }
+          },
+          {
+            "id": "dqXvaUJHZ9",
+            "type": "paragraph",
+            "data": {
+              "text": "Finally, presence is felt through the attention of others. A gaze, a touch or someone entering your space can turn your presence into a force acting on you."
+            }
+          },
+          {
+            "id": "6NZPfmXfbn",
+            "type": "header",
+            "data": {
+              "text": "3. The artists",
+              "level": 2
+            }
+          },
+          {
+            "id": "OIy9B460dy",
+            "type": "table",
+            "data": {
+              "withHeadings": true,
+              "stretched": false,
+              "content": [
+                [
+                  "Artist",
+                  "Why they belong here"
+                ],
+                [
+                  "Vera Molnar",
+                  "Her “1% disorder” shows that presence comes from noticing small changes in an ordered system"
+                ],
+                [
+                  "Myron Krueger",
+                  "His responsive environments treat presence as something you perform with your whole body"
+                ],
+                [
+                  "exonemo",
+                  "Their work shows how presence is negotiated between physical space and the internet"
+                ],
+                [
+                  "Behnaz Farahi",
+                  "Her responsive, soft-robotic work turns gaze and attention into physical behaviour"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "T0a8MFuzLg",
+            "type": "header",
+            "data": {
+              "text": "4. The works",
+              "level": 2
+            }
+          },
+          {
+            "id": "qt591vQ3Xj",
+            "type": "image",
+            "data": {
+              "caption": "The list of works",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-9.jpg"
+              }
+            }
+          },
+          {
+            "id": "ypvqu427iS",
+            "type": "header",
+            "data": {
+              "text": "Login, after exonemo",
+              "level": 3
+            }
+          },
+          {
+            "id": "arQizTXi9X",
+            "type": "paragraph",
+            "data": {
+              "text": "A wall of synchronised monitors shows a blurred live feed of the audience. Viewers can choose to scan a QR code, and a central screen counts how many are “online”. The simple act of logging in creates a second, digital version of your presence."
+            }
+          },
+          {
+            "id": "xhyriyqhp7",
+            "type": "image",
+            "data": {
+              "caption": "Login",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-10.jpg"
+              }
+            }
+          },
+          {
+            "id": "uEMaGSw3Th",
+            "type": "header",
+            "data": {
+              "text": "PRESENCE/RUPTURE, after Myron Krueger",
+              "level": 3
+            }
+          },
+          {
+            "id": "EXWvxDGQ5l",
+            "type": "paragraph",
+            "data": {
+              "text": "A participant moves in front of a camera while their silhouette is projected back in real time. When they are physically disconnected, their silhouette floats upward. When they are mentally elsewhere, ghostly echoes of past movements crowd around them. When they are spiritually fragmented, their body splits apart in the projection."
+            }
+          },
+          {
+            "id": "pblSDAdAdn",
+            "type": "image",
+            "data": {
+              "caption": "PRESENCE/RUPTURE",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-11.jpg"
+              }
+            }
+          },
+          {
+            "id": "R1xzi4VXrF",
+            "type": "header",
+            "data": {
+              "text": "Moments of Presence, after Vera Molnar",
+              "level": 3
+            }
+          },
+          {
+            "id": "O8RzGW1UsJ",
+            "type": "paragraph",
+            "data": {
+              "text": "A sequence of framed digital prints, built with p5.js. It begins with an ordered geometric grid, and as the viewer moves from left to right, small changes appear. A line bends, a square disappears, a shape distorts. Each small shift catches the eye and pulls the viewer into the moment."
+            }
+          },
+          {
+            "id": "ntgJdKbAiW",
+            "type": "image",
+            "data": {
+              "caption": "Moments of Presence, built with p5.js",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-13.jpg"
+              }
+            }
+          },
+          {
+            "id": "JYxpVFD5Fw",
+            "type": "header",
+            "data": {
+              "text": "Contours of Attention, after Behnaz Farahi",
+              "level": 3
+            }
+          },
+          {
+            "id": "6mSzlC0a4l",
+            "type": "paragraph",
+            "data": {
+              "text": "An interactive soft-robotic “body-landscape” of 3D-printed forms. When many visitors focus their gaze on one area, the membrane contracts. When attention disperses, it releases and breathes in slow, calming waves. A gentle touch makes it tighten, then soften. Presence becomes something shared rather than individual."
+            }
+          },
+          {
+            "id": "Grs8vpXuys",
+            "type": "image",
+            "data": {
+              "caption": "Contours of Attention",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-14.jpg"
+              }
+            }
+          },
+          {
+            "id": "4pMEqFkxS5",
+            "type": "image",
+            "data": {
+              "caption": "Contours of Attention",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-15.jpg"
+              }
+            }
+          },
+          {
+            "id": "A8GkZL13Dm",
+            "type": "header",
+            "data": {
+              "text": "5. What it says about presence",
+              "level": 2
+            }
+          },
+          {
+            "id": "ApRWCjJ9dn",
+            "type": "paragraph",
+            "data": {
+              "text": "Together, the works suggest that presence is not one thing but a relationship between body, mind, time, space and other people, an active process of engaging with the world rather than a state you are simply in."
+            }
+          },
+          {
+            "id": "igJdrnjztY",
+            "type": "image",
+            "data": {
+              "caption": "The back cover",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/presence-16.jpg"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a-noizzz",
+      "title": "A NOIZZZ",
+      "featured": false,
+      "meta": "Internet artwork · with Adeliya",
+      "categories": [
+        "web"
+      ],
+      "pitch": "An internet artwork about the noise of the comments section, and how it drowns out what we came to see.",
+      "howTitle": "How I made it",
+      "how": [
+        "A web-based piece built from the language of comment sections, exploring how feedback, opinion and nudging interfaces shape the way we take in content online."
+      ],
+      "tools": [
+        "Internet art",
+        "Web"
+      ],
+      "links": [
+        {
+          "label": "View artwork",
+          "url": "https://kobby12-2.github.io/UnderstanidingIM/"
+        }
+      ],
+      "media": {
+        "art": "",
+        "image": "assets/media/noizzz-1.jpg",
+        "video": "",
+        "embed": "",
+        "alt": "A NOIZZZ"
+      },
+      "piece": {
+        "type": "P",
+        "square": "b2",
+        "why": "A small piece that makes a lot of noise.",
+        "promotion": ""
+      },
+      "doc": {
+        "time": 1793628362656,
+        "version": "2.31.7",
+        "blocks": [
+          {
+            "id": "98IXb10lmh",
+            "type": "paragraph",
+            "data": {
+              "text": "Richmond Agyenim-Boateng and Adeliya · Understanding Interactive Media · <a href=\"https://kobby12-2.github.io/UnderstanidingIM/\">See the artwork online</a>"
+            }
+          },
+          {
+            "id": "PfXXeL3749",
+            "type": "header",
+            "data": {
+              "text": "1. The idea",
+              "level": 2
+            }
+          },
+          {
+            "id": "aV2qbmjujP",
+            "type": "paragraph",
+            "data": {
+              "text": "A NOIZZZ is an internet-based artwork about noise on social media, especially in the comments section. It looks at the hierarchy and chaos that get in the way of how we take in content online, and at how little of that noise we choose."
+            }
+          },
+          {
+            "id": "3pMPFSLM2J",
+            "type": "header",
+            "data": {
+              "text": "My role",
+              "level": 3
+            }
+          },
+          {
+            "id": "KbGwMx5rt5",
+            "type": "paragraph",
+            "data": {
+              "text": "I built the digital artwork, the web piece itself, while we developed the concept together."
+            }
+          },
+          {
+            "id": "ta8iCWbfqL",
+            "type": "header",
+            "data": {
+              "text": "2. The concept",
+              "level": 2
+            }
+          },
+          {
+            "id": "kKBQkgMi9z",
+            "type": "paragraph",
+            "data": {
+              "text": "With 6.04 billion people online, every post arrives buried under feedback, opinions, propaganda and attempts at control. The comments become louder than the content itself. Platforms tell us “your opinion matters” and design their interfaces to nudge us into adding to the noise."
+            }
+          },
+          {
+            "id": "3LlAN42XLM",
+            "type": "paragraph",
+            "data": {
+              "text": "We treated the comment as an image made of text, and the comments section as an archive of our digital lives. The artwork asks what it feels like when that archive drowns out the thing it is responding to."
+            }
+          },
+          {
+            "id": "WEfGSuZWjS",
+            "type": "image",
+            "data": {
+              "caption": "The kinds of noise we explored: feedback, comments, propaganda, control, thoughts and opinion",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/noizzz-3.jpg"
+              }
+            }
+          },
+          {
+            "id": "UZBHoBCzfC",
+            "type": "header",
+            "data": {
+              "text": "Inspiration",
+              "level": 3
+            }
+          },
+          {
+            "id": "P8SCr2aUop",
+            "type": "paragraph",
+            "data": {
+              "text": "Our main reference was the essay collection <i>Too Much World: Is the Internet Dead?</i> Two lines shaped our thinking."
+            }
+          },
+          {
+            "id": "yjaKtEiH1e",
+            "type": "quote",
+            "data": {
+              "text": "The internet persists offline as a mode of life, surveillance, production, and organization, &nbsp;that is a form of intense voyeurism coupled with maximum nontransparency.",
+              "caption": "Too Much World: Is the Internet Dead?",
+              "alignment": "left"
+            }
+          },
+          {
+            "id": "lwyC6qxnmk",
+            "type": "quote",
+            "data": {
+              "text": "Networked space is itself a medium.",
+              "caption": "Too Much World: Is the Internet Dead?",
+              "alignment": "left"
+            }
+          },
+          {
+            "id": "ypxn1uSVIf",
+            "type": "header",
+            "data": {
+              "text": "3. The questions it asks",
+              "level": 2
+            }
+          },
+          {
+            "id": "Nmhtsvjxcn",
+            "type": "list",
+            "data": {
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "Does the internet feel noisy to you?",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "Do you feel the urge to express your opinion when you are online?",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "Does your stance on a topic change because of other people’s comments?",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "Would social media still feel engaging if the comments section didn’t exist?",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          },
+          {
+            "id": "kWSHfgH0Tm",
+            "type": "image",
+            "data": {
+              "caption": "Real comments sections, the raw material of the piece",
+              "withBorder": false,
+              "withBackground": false,
+              "stretched": false,
+              "file": {
+                "url": "assets/media/noizzz-2.jpg"
+              }
+            }
+          },
+          {
+            "id": "g4Odpf2x4s",
+            "type": "header",
+            "data": {
+              "text": "4. See it",
+              "level": 2
+            }
+          },
+          {
+            "id": "kNdzwFrsY9",
+            "type": "paragraph",
+            "data": {
+              "text": "The artwork lives on the web: <a href=\"https://kobby12-2.github.io/UnderstanidingIM/\">kobby12-2.github.io/UnderstanidingIM</a>"
             }
           }
         ]
@@ -1387,1086 +2482,6 @@
       }
     },
     {
-      "id": "campus-explorer",
-      "title": "Campus Explorer",
-      "featured": false,
-      "meta": "VR & immersive",
-      "categories": [
-        "vr"
-      ],
-      "pitch": "A way to stand inside NYU Abu Dhabi before you arrive.",
-      "howTitle": "How I made it",
-      "how": [
-        "I mapped 360° photographs of campus locations into a Unity scene for Meta Quest, with hand-controller teleportation between locations. I added AI-generated narration, audio descriptions and text options so more people can use it."
-      ],
-      "tools": [
-        "Unity",
-        "C#",
-        "Meta Quest",
-        "360° photography"
-      ],
-      "links": [
-        {
-          "label": "Code",
-          "url": "https://github.com/iam-agyenim/Virtual_Campus_Tour"
-        }
-      ],
-      "media": {
-        "art": "sphere",
-        "image": "assets/media/vm360-vr-tour-5c1461.jpg",
-        "video": "",
-        "embed": "",
-        "alt": ""
-      },
-      "piece": {
-        "type": "B",
-        "square": "c7",
-        "why": "It moves on diagonals, the way you teleport between 360° scenes.",
-        "promotion": ""
-      },
-      "doc": {
-        "time": 1793618297013,
-        "version": "2.31.7",
-        "blocks": [
-          {
-            "id": "f6YUeC0ay7",
-            "type": "header",
-            "data": {
-              "text": "Campus Explorer",
-              "level": 2
-            }
-          },
-          {
-            "id": "K5Y0vG8ovK",
-            "type": "paragraph",
-            "data": {
-              "text": "A way to stand inside NYU Abu Dhabi before you arrive."
-            }
-          },
-          {
-            "id": "NnngqdnEdv",
-            "type": "embed",
-            "data": {
-              "url": "https://youtu.be/f_FQeykDIjQ",
-              "caption": ""
-            }
-          },
-          {
-            "id": "Bk4rd-X6Jw",
-            "type": "header",
-            "data": {
-              "text": "1. The idea",
-              "level": 2
-            }
-          },
-          {
-            "id": "LvtwIuBH7v",
-            "type": "paragraph",
-            "data": {
-              "text": "Campus Explorer is a virtual reality tour of the NYU Abu Dhabi campus for the Meta Quest headset. You put on the headset and find yourself standing inside real 360° photographs of the campus. From there you can look around in every direction, move from place to place with the hand controller, and listen to a voice that tells you about each location."
-            }
-          },
-          {
-            "id": "BuEW5JPwIL",
-            "type": "paragraph",
-            "data": {
-              "text": "Anyone with a headset can visit the campus from anywhere in the world, without travelling to Abu Dhabi."
-            }
-          },
-          {
-            "id": "aJUHWScsiI",
-            "type": "header",
-            "data": {
-              "text": "2. The concept",
-              "level": 2
-            }
-          },
-          {
-            "id": "kLoSWxMYCv",
-            "type": "paragraph",
-            "data": {
-              "text": "Choosing a university often means choosing a place you have never seen. Many prospective students and their families can't visit a campus before they apply, because it is too far away or too expensive to travel there. They make one of the biggest decisions of their lives from photos and brochures."
-            }
-          },
-          {
-            "id": "2q2mzvCmGO",
-            "type": "paragraph",
-            "data": {
-              "text": "Campus Explorer tries to close that distance. A photo shows you a place, but VR puts you inside it. You can turn your head and see what is behind you, choose which way to walk, and get a feel for how big the spaces are and how they connect. The goal is the feeling of having been there."
-            }
-          },
-          {
-            "id": "ymBbHSO6kV",
-            "type": "paragraph",
-            "data": {
-              "text": "I also wanted the tour to work for as many people as possible. That is why every key location has a spoken description and text, so someone who can't see the scene well or can't hear the narration can still follow the tour."
-            }
-          },
-          {
-            "id": "6vCXBJ6oj7",
-            "type": "header",
-            "data": {
-              "text": "3. The interaction",
-              "level": 2
-            }
-          },
-          {
-            "id": "nuSJ-1aXGF",
-            "type": "paragraph",
-            "data": {
-              "text": "Starting the tourThe app opens on a main menu with three choices."
-            }
-          },
-          {
-            "id": "RTXB6za5A4",
-            "type": "table",
-            "data": {
-              "withHeadings": true,
-              "content": [
-                [
-                  "Button",
-                  "What it does"
-                ],
-                [
-                  "Start Tour",
-                  "Begins the campus tour"
-                ],
-                [
-                  "Instructions",
-                  "Explains how to move and use the features"
-                ],
-                [
-                  "Exit",
-                  "Closes the app"
-                ]
-              ]
-            }
-          },
-          {
-            "id": "C3adSCdGX_",
-            "type": "paragraph",
-            "data": {
-              "text": "Moving around campus:"
-            }
-          },
-          {
-            "id": "ilgO5KuBmS",
-            "type": "paragraph",
-            "data": {
-              "text": "Every scene shows arrows for forward, backward, left and right. Pointing the right-hand controller at an arrow and clicking it teleports you to the next location in that direction, so you choose your own path through campus the way you would on a real walk."
-            }
-          },
-          {
-            "id": "0NcS8azcFU",
-            "type": "paragraph",
-            "data": {
-              "text": "Learning about each place"
-            }
-          },
-          {
-            "id": "tpyT-SIF3K",
-            "type": "table",
-            "data": {
-              "withHeadings": true,
-              "content": [
-                [
-                  "What I do",
-                  "What happens"
-                ],
-                [
-                  "Click the&nbsp;audio button&nbsp;at a key location",
-                  "An AI-generated voice describes that place"
-                ],
-                [
-                  "Read the&nbsp;text box",
-                  "The same information appears as text"
-                ],
-                [
-                  "Click&nbsp;Main Menu&nbsp;(bottom-right of every scene)",
-                  "Returns to the main menu"
-                ]
-              ]
-            }
-          },
-          {
-            "id": "KaroMhNdC2",
-            "type": "paragraph",
-            "data": {
-              "text": "The arrows decide where you go, and the audio and text tell you where you are."
-            }
-          },
-          {
-            "id": "7NdFIEpuKS",
-            "type": "header",
-            "data": {
-              "text": "4. Technical implementation",
-              "level": 2
-            }
-          },
-          {
-            "id": "Kl4H9dACft",
-            "type": "paragraph",
-            "data": {
-              "text": "Engine:&nbsp;Unity 2022.3.14f1, with scripts in C#"
-            }
-          },
-          {
-            "id": "XHUq_ZqiBC",
-            "type": "paragraph",
-            "data": {
-              "text": "Headset:&nbsp;Meta Quest 2, Quest Pro and Quest 3"
-            }
-          },
-          {
-            "id": "aJJY4S9_66",
-            "type": "paragraph",
-            "data": {
-              "text": "Images:&nbsp;High-quality 360° panoramic photographs of key campus locations"
-            }
-          },
-          {
-            "id": "annP5LTl9r",
-            "type": "paragraph",
-            "data": {
-              "text": "Movement:&nbsp;Teleportation scripts that link each scene to its neighbours through directional arrows"
-            }
-          },
-          {
-            "id": "fpgGAFsn-U",
-            "type": "paragraph",
-            "data": {
-              "text": "Narration:&nbsp;AI-generated voice descriptions for important landmarks"
-            }
-          },
-          {
-            "id": "mo88HL9bep",
-            "type": "paragraph",
-            "data": {
-              "text": "Accessibility:&nbsp;Audio descriptions and text boxes at key locations"
-            }
-          },
-          {
-            "id": "Z8iVZFCznW",
-            "type": "paragraph",
-            "data": {
-              "text": "How the scenes connect:&nbsp;"
-            }
-          },
-          {
-            "id": "2mXXXKQ4Ff",
-            "type": "paragraph",
-            "data": {
-              "text": "Each location is its own 360° scene. The arrows in a scene point to the locations next to it, so the whole tour works like a map of connected places. Moving forward from one scene and then backward returns you to where you started, just like walking on campus."
-            }
-          },
-          {
-            "id": "2Se4YhFy9H",
-            "type": "paragraph",
-            "data": {
-              "text": "My role:"
-            }
-          },
-          {
-            "id": "IspKzLwm2L",
-            "type": "paragraph",
-            "data": {
-              "text": "I photographed every location in the tour myself. I took 360° pictures of each place on campus, then registered them so each panorama lined up correctly as a full sphere. I brought each photo into Unity as its own scene and set the scenes up for the headset."
-            }
-          },
-          {
-            "id": "HkoV06mM7w",
-            "type": "paragraph",
-            "data": {
-              "text": "I also wrote the code that connects the scenes. I created an array that holds every scene in the tour, so each arrow knows which scene to load next. This allowed visitors move from one location to the next by clicking an arrow."
-            }
-          },
-          {
-            "id": "u1UXwBNQPM",
-            "type": "header",
-            "data": {
-              "text": "5. Next steps",
-              "level": 2
-            }
-          },
-          {
-            "id": "ajEI9OXrPm",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "Add more campus locations&nbsp;to the tour.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "Make it work in a web browser,&nbsp;so people without a headset can explore it too.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "Test the tour with prospective students,&nbsp;to see which places they want to visit most.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "robotic-arm",
-      "title": "Hand-Controlled Robotic Arm",
-      "featured": false,
-      "meta": "Creative Robotics & Technology · Computer vision",
-      "categories": [
-        "ai",
-        "physical"
-      ],
-      "pitch": "A robotic arm that follows your hand, with no controller.",
-      "howTitle": "How I made it",
-      "how": [
-        "A camera finds 21 points on a hand with MediaPipe and OpenCV. Gestures send a UFACTORY xArm to set positions, or the arm follows the wrist in real time."
-      ],
-      "tools": [
-        "Python",
-        "OpenCV",
-        "MediaPipe",
-        "xArm API"
-      ],
-      "links": [
-        {
-          "label": "Code",
-          "url": "https://github.com/iam-agyenim/Hand-Gesture---Controlled-Robotic-Arm"
-        }
-      ],
-      "media": {
-        "art": "hand",
-        "image": "assets/media/images-3-aaa9de.jpg",
-        "video": "",
-        "embed": "",
-        "alt": ""
-      },
-      "piece": {
-        "type": "Q",
-        "square": "e5",
-        "why": "It goes anywhere your hand goes.",
-        "promotion": ""
-      },
-      "doc": {
-        "time": 1793621942804,
-        "version": "2.31.7",
-        "blocks": [
-          {
-            "id": "V1pomO2ZQy",
-            "type": "paragraph",
-            "data": {
-              "text": "Richmond Agyenim-Boateng, with Pavly Hamin and Dhyey · Creative Robotics &amp; Technology ·&nbsp;"
-            }
-          },
-          {
-            "id": "mX7abK7yOS",
-            "type": "embed",
-            "data": {
-              "url": "https://youtube.com/shorts/ZnMwG0VvUew?feature=share",
-              "caption": ""
-            }
-          },
-          {
-            "id": "lEr8kcQ47M",
-            "type": "header",
-            "data": {
-              "text": "1. The idea",
-              "level": 2
-            }
-          },
-          {
-            "id": "fSM8G40RXY",
-            "type": "paragraph",
-            "data": {
-              "text": "This project lets you control an industrial robotic arm with your bare hand. A webcam watches your hand, and the arm moves with it. There is no joystick, no controller and nothing to wear."
-            }
-          },
-          {
-            "id": "leyCd5jh75",
-            "type": "paragraph",
-            "data": {
-              "text": "Open your hand and the arm follows your wrist around the room. Close your hand into a fist and the arm swings to a set position, left or right depending on which hand you closed."
-            }
-          },
-          {
-            "id": "FrLEzrPSGk",
-            "type": "header",
-            "data": {
-              "text": "2. The concept",
-              "level": 2
-            }
-          },
-          {
-            "id": "FehkotQzfc",
-            "type": "paragraph",
-            "data": {
-              "text": "Industrial robots are usually programmed with code or steered with a pendant full of buttons. That puts a layer of technology between the person and the machine."
-            }
-          },
-          {
-            "id": "MJyITsMrjd",
-            "type": "paragraph",
-            "data": {
-              "text": "I wanted the arm to read the body directly. The hand is something everyone already knows how to use, so steering a robot with it feels natural from the first second. The question became how much a camera can understand from a hand alone, whether it is open or closed, where the wrist is and how far it has turned."
-            }
-          },
-          {
-            "id": "i9l1LuZma7",
-            "type": "header",
-            "data": {
-              "text": "3. The interaction",
-              "level": 2
-            }
-          },
-          {
-            "id": "AGvsZtadMZ",
-            "type": "table",
-            "data": {
-              "withHeadings": true,
-              "stretched": false,
-              "content": [
-                [
-                  "What I do",
-                  "What the arm does"
-                ],
-                [
-                  "Show an open hand and move it",
-                  "The arm follows the wrist in real time"
-                ],
-                [
-                  "Close my left hand",
-                  "The arm turns to −180°"
-                ],
-                [
-                  "Close my right hand",
-                  "The arm turns to +180°"
-                ],
-                [
-                  "Rotate my open hand",
-                  "The arm’s wrist joint rotates to match"
-                ],
-                [
-                  "Press Q",
-                  "Stops tracking and disconnects the arm"
-                ]
-              ]
-            }
-          },
-          {
-            "id": "84W6nnNoSr",
-            "type": "paragraph",
-            "data": {
-              "text": "<b>An open hand steers, and a closed hand gives a command.</b>"
-            }
-          },
-          {
-            "id": "MUU6LVlQtz",
-            "type": "image",
-            "data": {
-              "caption": "The 21 points MediaPipe finds on a hand, and the ones my code uses",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/robotic-arm-hand-points.png"
-              }
-            }
-          },
-          {
-            "id": "pbIIw41TUg",
-            "type": "header",
-            "data": {
-              "text": "4. Technical implementation",
-              "level": 2
-            }
-          },
-          {
-            "id": "hF9Fe2nZPk",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "<b>Language.</b> Python.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Hand tracking.</b> OpenCV reads the webcam, and MediaPipe Hands finds 21 points on each hand in every frame.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Robot.</b> A UFACTORY xArm, controlled over the network with the xArm Python SDK.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Three scripts.</b> <code>movement.py</code> follows the wrist, <code>rotation.py</code> matches the hand’s rotation, and <code>gesture.py</code> combines wrist following with the open and closed hand commands.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "a8dWugAa20",
-            "type": "header",
-            "data": {
-              "text": "How the hand becomes movement",
-              "level": 3
-            }
-          },
-          {
-            "id": "mvl1OBxnNh",
-            "type": "list",
-            "data": {
-              "style": "ordered",
-              "meta": {
-                "counterType": "numeric"
-              },
-              "items": [
-                {
-                  "content": "<b>Find the wrist.</b> The wrist point’s position in the camera image is scaled to a 1024 × 720 workspace.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Turn position into angles.</b> The distance from the centre of the image becomes joint angles for the arm.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Check open or closed.</b> If at least three fingertips are below their middle joints, the hand counts as closed.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Measure rotation.</b> The angle of the line between the index and pinky knuckles gives how far the hand has turned.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "41CwoVYwdf",
-            "type": "header",
-            "data": {
-              "text": "My role",
-              "level": 3
-            }
-          },
-          {
-            "id": "i1NAJvNlo6",
-            "type": "paragraph",
-            "data": {
-              "text": "This was a team project with Pavly Hamin and Dhyey. My part was the mapping, the code that turns where your hand is in the camera image into angles the robotic arm can move to."
-            }
-          },
-          {
-            "id": "TxJmL4GWkT",
-            "type": "header",
-            "data": {
-              "text": "Code I’m really proud of",
-              "level": 3
-            }
-          },
-          {
-            "id": "T1agM2yKPR",
-            "type": "paragraph",
-            "data": {
-              "text": "This is the mapping I built. The camera only knows where the wrist is in pixels, and the arm only understands joint angles. The function measures how far the wrist is from the centre of the image, scales that distance, and converts it into radians for the arm’s joints. Without it, the arm would have no way to follow a hand."
-            }
-          },
-          {
-            "id": "aR1TKIpc2U",
-            "type": "code",
-            "data": {
-              "language": "python",
-              "filename": "gesture.py",
-              "code": "def map_coordinates_to_angles(x, y, width, height):\n    x_normalized = (x - width / 2) / (width / 2) * 100\n    y_normalized = (y - height / 2) / (height / 2) * 100\n    min_angle_deg_x, max_angle_deg_x = -360, 360\n    min_angle_deg_y, max_angle_deg_y = -100, 100\n    x_angle = np.interp(x_normalized, [-1, 1], [min_angle_deg_x, max_angle_deg_x]) * DEGREES_TO_RADIANS\n    y_angle = np.interp(y_normalized, [-1, 1], [min_angle_deg_y, max_angle_deg_y]) * DEGREES_TO_RADIANS\n    return x_angle, y_angle"
-            }
-          },
-          {
-            "id": "A5nIsTsTEz",
-            "type": "header",
-            "data": {
-              "text": "5. Next steps",
-              "level": 2
-            }
-          },
-          {
-            "id": "HojUOHXz7G",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "<b>Add the gripper,</b> so pinching your fingers opens and closes the arm’s hand.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Use depth,</b> so moving your hand toward the camera moves the arm forward.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Smooth the movement,</b> so small shakes of the hand don’t make the arm jitter.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "learnai",
-      "title": "LearnAI",
-      "featured": false,
-      "meta": "AI · Web",
-      "categories": [
-        "ai",
-        "web"
-      ],
-      "pitch": "Type one sentence and get a full course.",
-      "howTitle": "How I made it",
-      "how": [
-        "The OpenAI API turns one sentence into a full syllabus of 5–8 sections, then writes each lesson as 4–8 narrated slides and builds them into a video. Each stage returns strict JSON that the next stage checks before using it."
-      ],
-      "tools": [
-        "TypeScript",
-        "React",
-        "OpenAI API"
-      ],
-      "links": [
-        {
-          "label": "Code",
-          "url": "https://github.com/iam-agyenim/Learnai"
-        }
-      ],
-      "media": {
-        "art": "pipeline",
-        "image": "assets/media/screenshot-2026-11-02-at-3-48-49-pm-3763de.png",
-        "video": "",
-        "embed": "",
-        "alt": ""
-      },
-      "piece": {
-        "type": "B",
-        "square": "f2",
-        "why": "One sentence, a long reach: a whole course from a single line.",
-        "promotion": ""
-      },
-      "doc": {
-        "time": 1793619984229,
-        "version": "2.31.7",
-        "blocks": [
-          {
-            "id": "3Vhy3aEnAi",
-            "type": "embed",
-            "data": {
-              "url": "https://youtu.be/DATDARzTnq8",
-              "caption": ""
-            }
-          },
-          {
-            "id": "d8xXKW0HRV",
-            "type": "header",
-            "data": {
-              "text": "1. The idea",
-              "level": 2
-            }
-          },
-          {
-            "id": "W5FBDLW5rs",
-            "type": "paragraph",
-            "data": {
-              "text": "LearnAI turns a single sentence into a course. You type something like “Teach me Python,” and the app plans a full syllabus, then teaches the first lesson as a short video made of slides with a voice reading the script. After each lesson, you choose what happens next. You can go on to the next lesson, go deeper, ask for a simpler explanation, get an exercise, or turn the topic into a project."
-            }
-          },
-          {
-            "id": "e2PH4fYhp7",
-            "type": "paragraph",
-            "data": {
-              "text": "It works like a chat. You talk to it, and it answers with lessons."
-            }
-          },
-          {
-            "id": "ImTyixVuOq",
-            "type": "header",
-            "data": {
-              "text": "2. The concept",
-              "level": 2
-            }
-          },
-          {
-            "id": "vONPB1ozak",
-            "type": "paragraph",
-            "data": {
-              "text": "Online courses are written once for everyone. Every learner gets the same videos in the same order, at the same level, whether they are confused or bored."
-            }
-          },
-          {
-            "id": "FbvXrbPeIx",
-            "type": "paragraph",
-            "data": {
-              "text": "I wanted to build a teacher that responds to the learner. LearnAI starts with structure, a real syllabus that builds from beginner to advanced like a course you would buy. Then it stays flexible inside that structure. If a lesson is too hard, you ask for it more simply. If it is too easy, you go deeper. If you want to practise, it gives you an exercise."
-            }
-          },
-          {
-            "id": "5tcLklbbow",
-            "type": "paragraph",
-            "data": {
-              "text": "The course plan keeps the learning organised, and the chat keeps it personal."
-            }
-          },
-          {
-            "id": "D9E1dvQH5Y",
-            "type": "header",
-            "data": {
-              "text": "3. The interaction",
-              "level": 2
-            }
-          },
-          {
-            "id": "YxYpqSHt4V",
-            "type": "header",
-            "data": {
-              "text": "Step 1: ask for a topic",
-              "level": 3
-            }
-          },
-          {
-            "id": "HGuTFZRrfv",
-            "type": "paragraph",
-            "data": {
-              "text": "The user types what they want to learn, for example “Teach me Python.” The app removes phrases like “teach me” or “I want to learn” to find the topic."
-            }
-          },
-          {
-            "id": "cWUjRjdoMm",
-            "type": "header",
-            "data": {
-              "text": "Step 2: watch the app build the course",
-              "level": 3
-            }
-          },
-          {
-            "id": "HJec4fDJVl",
-            "type": "paragraph",
-            "data": {
-              "text": "While it works, the chat shows each stage so the user knows what is happening."
-            }
-          },
-          {
-            "id": "DoGx7Vg4fq",
-            "type": "table",
-            "data": {
-              "withHeadings": true,
-              "stretched": false,
-              "content": [
-                [
-                  "Stage",
-                  "What the app is doing"
-                ],
-                [
-                  "Thinking",
-                  "Reading the request"
-                ],
-                [
-                  "Generating syllabus",
-                  "Planning the full course"
-                ],
-                [
-                  "Creating video",
-                  "Writing and building the first lesson"
-                ],
-                [
-                  "Complete",
-                  "The lesson is ready to watch"
-                ]
-              ]
-            }
-          },
-          {
-            "id": "g3wa7xia5e",
-            "type": "header",
-            "data": {
-              "text": "Step 3: follow the syllabus",
-              "level": 3
-            }
-          },
-          {
-            "id": "4Kyb9LOoOn",
-            "type": "paragraph",
-            "data": {
-              "text": "The syllabus appears in the sidebar, split into sections from fundamentals to advanced topics, with the current lesson marked."
-            }
-          },
-          {
-            "id": "AHbo9XeZ7L",
-            "type": "header",
-            "data": {
-              "text": "Step 4: watch the lesson",
-              "level": 3
-            }
-          },
-          {
-            "id": "ooLMNZGEFP",
-            "type": "paragraph",
-            "data": {
-              "text": "Each lesson is a short video of 4 to 8 slides, and every slide has its own narration."
-            }
-          },
-          {
-            "id": "wg8fk8mx88",
-            "type": "header",
-            "data": {
-              "text": "Step 5: choose what comes next",
-              "level": 3
-            }
-          },
-          {
-            "id": "gOe1rKXfTM",
-            "type": "table",
-            "data": {
-              "withHeadings": true,
-              "stretched": false,
-              "content": [
-                [
-                  "Button",
-                  "What it does"
-                ],
-                [
-                  "Continue to next lesson",
-                  "Moves to the next lesson in the syllabus"
-                ],
-                [
-                  "Go deeper",
-                  "Explains the same idea in more depth"
-                ],
-                [
-                  "Explain more simply",
-                  "Explains the same idea in simpler words"
-                ],
-                [
-                  "Give me an exercise",
-                  "Creates a practice exercise"
-                ],
-                [
-                  "Turn into a project",
-                  "Creates a real-world project on the topic"
-                ]
-              ]
-            }
-          },
-          {
-            "id": "j63rdFn149",
-            "type": "paragraph",
-            "data": {
-              "text": "<b>The syllabus decides what to learn, and the buttons decide how to learn it.</b>"
-            }
-          },
-          {
-            "id": "4YqBieUXw1",
-            "type": "header",
-            "data": {
-              "text": "4. Technical implementation",
-              "level": 2
-            }
-          },
-          {
-            "id": "LL5vJFUMvn",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "<b>Front end.</b> React, TypeScript, Vite, Tailwind CSS and shadcn-ui.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>AI.</b> OpenAI’s gpt-4o-mini writes the syllabus, lessons, explanations, exercises and projects. DALL·E 3 makes the lesson images.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Narration.</b> The browser’s built-in speech synthesis reads each slide’s script aloud.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Video.</b> Slides are rendered on a canvas and exported as a video. If the export fails, the lesson plays directly as narrated slides.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "ZZh0xEt6xm",
-            "type": "header",
-            "data": {
-              "text": "How a course is made, in stages",
-              "level": 3
-            }
-          },
-          {
-            "id": "WXp99Lf2fc",
-            "type": "list",
-            "data": {
-              "style": "ordered",
-              "meta": {
-                "counterType": "numeric"
-              },
-              "items": [
-                {
-                  "content": "<b>Course architecture.</b> The AI designs a syllabus of 5 to 8 sections, each with 3 to 6 lessons, from absolute beginner to advanced. For a big topic like Python, this can reach 30 to 50 lessons.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Storyboard.</b> For the current lesson, the AI writes 4 to 8 scenes. Each scene has its on-screen content and a voice script.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Slides and video.</b> The app turns the scenes into slides and builds the video.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "bhBFKchFMG",
-            "type": "paragraph",
-            "data": {
-              "text": "Every stage asks the AI to answer in strict JSON, so the next stage can read it reliably."
-            }
-          },
-          {
-            "id": "VTGm7m24Hs",
-            "type": "header",
-            "data": {
-              "text": "Built not to break",
-              "level": 3
-            }
-          },
-          {
-            "id": "eWo4ye1KM9",
-            "type": "paragraph",
-            "data": {
-              "text": "I added a fallback at every step, so the learner always gets something."
-            }
-          },
-          {
-            "id": "8vJ0BIgkS5",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "If the syllabus fails, the app creates a simple starter syllabus.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "If the video export fails, the slides play directly in the browser.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "If everything fails, the app shows a short welcome slide on the topic.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "If image generation fails, a stable default image is used.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "sZ0mDTrFGl",
-            "type": "header",
-            "data": {
-              "text": "Code I’m really proud of",
-              "level": 3
-            }
-          },
-          {
-            "id": "XlNP2PeHTg",
-            "type": "paragraph",
-            "data": {
-              "text": "AI models don’t always return perfect JSON. Sometimes the answer is wrapped in markdown, and sometimes it is cut off before the last bracket. I wrote this function to clean the answer and, if it still won’t parse, to find the JSON inside it and close any brackets that were left open. This one function kept the whole course pipeline from crashing."
-            }
-          },
-          {
-            "id": "DNKEcSnmn1",
-            "type": "code",
-            "data": {
-              "language": "typescript",
-              "filename": "openai.ts",
-              "code": "private static extractAndRepairJSON(content: string): any {\n  let cleanedContent = content.trim();\n\n  // Remove markdown code blocks if present\n  cleanedContent = cleanedContent.replace(/```json\\n?/g, '').replace(/```\\n?/g, '').trim();\n\n  try {\n    return JSON.parse(cleanedContent);\n  } catch (e) {\n    // Find the JSON structure inside the answer\n    const jsonMatch = cleanedContent.match(/(\\[[\\s\\S]*\\]|\\{[\\s\\S]*\\})/);\n    if (jsonMatch) {\n      let jsonString = jsonMatch[0];\n\n      // Truncation repair: close open brackets if missing\n      const openBrackets = (jsonString.match(/\\[/g) || []).length;\n      const closeBrackets = (jsonString.match(/\\]/g) || []).length;\n      const openCurly = (jsonString.match(/\\{/g) || []).length;\n      const closeCurly = (jsonString.match(/\\}/g) || []).length;\n\n      if (openBrackets > closeBrackets) jsonString += ']'.repeat(openBrackets - closeBrackets);\n      if (openCurly > closeCurly) jsonString += '}'.repeat(openCurly - closeCurly);\n\n      return JSON.parse(jsonString);\n    }\n    throw e;\n  }\n}"
-            }
-          },
-          {
-            "id": "IVeb2oXBtE",
-            "type": "header",
-            "data": {
-              "text": "5. Next steps",
-              "level": 2
-            }
-          },
-          {
-            "id": "4JmP8dJzoq",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "<b>Make it adaptive.</b> Every lesson is set to beginner level right now. Next, the level should change based on how the learner is doing.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Save progress,</b> so learners can come back to their course later.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "<b>Better voices,</b> using AI voices instead of the browser’s built-in speech.",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "syllabus-plus",
       "title": "Syllabus+",
       "featured": false,
@@ -2474,7 +2489,7 @@
       "categories": [
         "web"
       ],
-      "pitch": "A study platform where students upload their notes and turn them into flashcards and other study tools.",
+      "pitch": "A study platform where students share course resources and campus reps make sure they can be trusted.",
       "howTitle": "How I made it",
       "how": [],
       "tools": [
@@ -2888,220 +2903,6 @@
                   "items": []
                 }
               ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "a-noizzz",
-      "title": "A NOIZZZ",
-      "featured": false,
-      "meta": "Internet artwork · with Adeliya",
-      "categories": [
-        "web"
-      ],
-      "pitch": "An internet artwork about the noise of the comments section, and how it drowns out what we came to see.",
-      "howTitle": "How I made it",
-      "how": [
-        "A web-based piece built from the language of comment sections, exploring how feedback, opinion and nudging interfaces shape the way we take in content online."
-      ],
-      "tools": [
-        "Internet art",
-        "Web"
-      ],
-      "links": [
-        {
-          "label": "View artwork",
-          "url": "https://kobby12-2.github.io/UnderstanidingIM/"
-        }
-      ],
-      "media": {
-        "art": "",
-        "image": "assets/media/noizzz-1.jpg",
-        "video": "",
-        "embed": "",
-        "alt": "A NOIZZZ"
-      },
-      "piece": {
-        "type": "P",
-        "square": "b2",
-        "why": "A small piece that makes a lot of noise.",
-        "promotion": ""
-      },
-      "doc": {
-        "time": 1793628362656,
-        "version": "2.31.7",
-        "blocks": [
-          {
-            "id": "98IXb10lmh",
-            "type": "paragraph",
-            "data": {
-              "text": "Richmond Agyenim-Boateng and Adeliya · Understanding Interactive Media · <a href=\"https://kobby12-2.github.io/UnderstanidingIM/\">See the artwork online</a>"
-            }
-          },
-          {
-            "id": "PfXXeL3749",
-            "type": "header",
-            "data": {
-              "text": "1. The idea",
-              "level": 2
-            }
-          },
-          {
-            "id": "aV2qbmjujP",
-            "type": "paragraph",
-            "data": {
-              "text": "A NOIZZZ is an internet-based artwork about noise on social media, especially in the comments section. It looks at the hierarchy and chaos that get in the way of how we take in content online, and at how little of that noise we choose."
-            }
-          },
-          {
-            "id": "3pMPFSLM2J",
-            "type": "header",
-            "data": {
-              "text": "My role",
-              "level": 3
-            }
-          },
-          {
-            "id": "KbGwMx5rt5",
-            "type": "paragraph",
-            "data": {
-              "text": "I built the digital artwork, the web piece itself, while we developed the concept together."
-            }
-          },
-          {
-            "id": "ta8iCWbfqL",
-            "type": "header",
-            "data": {
-              "text": "2. The concept",
-              "level": 2
-            }
-          },
-          {
-            "id": "kKBQkgMi9z",
-            "type": "paragraph",
-            "data": {
-              "text": "With 6.04 billion people online, every post arrives buried under feedback, opinions, propaganda and attempts at control. The comments become louder than the content itself. Platforms tell us “your opinion matters” and design their interfaces to nudge us into adding to the noise."
-            }
-          },
-          {
-            "id": "3LlAN42XLM",
-            "type": "paragraph",
-            "data": {
-              "text": "We treated the comment as an image made of text, and the comments section as an archive of our digital lives. The artwork asks what it feels like when that archive drowns out the thing it is responding to."
-            }
-          },
-          {
-            "id": "WEfGSuZWjS",
-            "type": "image",
-            "data": {
-              "caption": "The kinds of noise we explored: feedback, comments, propaganda, control, thoughts and opinion",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/noizzz-3.jpg"
-              }
-            }
-          },
-          {
-            "id": "UZBHoBCzfC",
-            "type": "header",
-            "data": {
-              "text": "Inspiration",
-              "level": 3
-            }
-          },
-          {
-            "id": "P8SCr2aUop",
-            "type": "paragraph",
-            "data": {
-              "text": "Our main reference was the essay collection <i>Too Much World: Is the Internet Dead?</i> Two lines shaped our thinking."
-            }
-          },
-          {
-            "id": "yjaKtEiH1e",
-            "type": "quote",
-            "data": {
-              "text": "The internet persists offline as a mode of life, surveillance, production, and organization, &nbsp;that is a form of intense voyeurism coupled with maximum nontransparency.",
-              "caption": "Too Much World: Is the Internet Dead?",
-              "alignment": "left"
-            }
-          },
-          {
-            "id": "lwyC6qxnmk",
-            "type": "quote",
-            "data": {
-              "text": "Networked space is itself a medium.",
-              "caption": "Too Much World: Is the Internet Dead?",
-              "alignment": "left"
-            }
-          },
-          {
-            "id": "ypxn1uSVIf",
-            "type": "header",
-            "data": {
-              "text": "3. The questions it asks",
-              "level": 2
-            }
-          },
-          {
-            "id": "Nmhtsvjxcn",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "Does the internet feel noisy to you?",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "Do you feel the urge to express your opinion when you are online?",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "Does your stance on a topic change because of other people’s comments?",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "Would social media still feel engaging if the comments section didn’t exist?",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "kWSHfgH0Tm",
-            "type": "image",
-            "data": {
-              "caption": "Real comments sections, the raw material of the piece",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/noizzz-2.jpg"
-              }
-            }
-          },
-          {
-            "id": "g4Odpf2x4s",
-            "type": "header",
-            "data": {
-              "text": "4. See it",
-              "level": 2
-            }
-          },
-          {
-            "id": "kNdzwFrsY9",
-            "type": "paragraph",
-            "data": {
-              "text": "The artwork lives on the web: <a href=\"https://kobby12-2.github.io/UnderstanidingIM/\">kobby12-2.github.io/UnderstanidingIM</a>"
             }
           }
         ]
@@ -3595,50 +3396,72 @@
       }
     },
     {
-      "id": "echoes-of-place",
-      "title": "Echoes of Place",
+      "id": "campus-explorer",
+      "title": "Campus Explorer",
       "featured": false,
-      "meta": "Site-specific sound artwork · with Areeba",
+      "meta": "VR & immersive",
       "categories": [
-        "physical"
+        "vr"
       ],
-      "pitch": "A dark room, a pair of headphones and the recorded sounds of a real place. Can you be somewhere without being there?",
+      "pitch": "A way to stand inside NYU Abu Dhabi before you arrive.",
       "howTitle": "How I made it",
       "how": [
-        "We recorded ambient sound and reflections at a real site and played them in a darkened room with waveforms and photos, then asked listeners to pin their reactions to the wall."
+        "I mapped 360° photographs of campus locations into a Unity scene for Meta Quest, with hand-controller teleportation between locations. I added AI-generated narration, audio descriptions and text options so more people can use it."
       ],
       "tools": [
-        "Field recording",
-        "Sound design",
-        "Projection"
+        "Unity",
+        "C#",
+        "Meta Quest",
+        "360° photography"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/iam-agyenim/Virtual_Campus_Tour"
+        }
+      ],
       "media": {
-        "art": "",
-        "image": "assets/media/echoes-1.jpg",
+        "art": "sphere",
+        "image": "assets/media/vm360-vr-tour-5c1461.jpg",
         "video": "",
         "embed": "",
-        "alt": "Echoes of Place"
+        "alt": ""
       },
       "piece": {
-        "type": "P",
-        "square": "g2",
-        "why": "You hear it before you see it.",
+        "type": "B",
+        "square": "c7",
+        "why": "It moves on diagonals, the way you teleport between 360° scenes.",
         "promotion": ""
       },
       "doc": {
-        "time": 1793627734371,
+        "time": 1793618297013,
         "version": "2.31.7",
         "blocks": [
           {
-            "id": "cnyCcQTpGz",
-            "type": "paragraph",
+            "id": "f6YUeC0ay7",
+            "type": "header",
             "data": {
-              "text": "Richmond Agyenim-Boateng and Areeba · Site-specific sound artwork"
+              "text": "Campus Explorer",
+              "level": 2
             }
           },
           {
-            "id": "rJIBWTiGdw",
+            "id": "K5Y0vG8ovK",
+            "type": "paragraph",
+            "data": {
+              "text": "A way to stand inside NYU Abu Dhabi before you arrive."
+            }
+          },
+          {
+            "id": "NnngqdnEdv",
+            "type": "embed",
+            "data": {
+              "url": "https://youtu.be/f_FQeykDIjQ",
+              "caption": ""
+            }
+          },
+          {
+            "id": "Bk4rd-X6Jw",
             "type": "header",
             "data": {
               "text": "1. The idea",
@@ -3646,36 +3469,21 @@
             }
           },
           {
-            "id": "4AtTQ2QVlW",
+            "id": "LvtwIuBH7v",
             "type": "paragraph",
             "data": {
-              "text": "Echoes of Place is a sound-based artwork about how spaces hold emotional memory. We recorded ambient sounds and spoken reflections at a real site, then invited listeners to experience that place again through sound alone."
+              "text": "Campus Explorer is a virtual reality tour of the NYU Abu Dhabi campus for the Meta Quest headset. You put on the headset and find yourself standing inside real 360° photographs of the campus. From there you can look around in every direction, move from place to place with the hand controller, and listen to a voice that tells you about each location."
             }
           },
           {
-            "id": "EVnHu7nBJ9",
+            "id": "BuEW5JPwIL",
             "type": "paragraph",
             "data": {
-              "text": "It starts with one question. How does sound shape our perception of a place?"
+              "text": "Anyone with a headset can visit the campus from anywhere in the world, without travelling to Abu Dhabi."
             }
           },
           {
-            "id": "kH3ggXfiT8",
-            "type": "header",
-            "data": {
-              "text": "My role",
-              "level": 3
-            }
-          },
-          {
-            "id": "8phungMGI6",
-            "type": "paragraph",
-            "data": {
-              "text": "I built the digital installation: the visuals that play in the dark room alongside the sound, such as the audio waveforms and photos of the site."
-            }
-          },
-          {
-            "id": "9ikWivJXSm",
+            "id": "aJUHWScsiI",
             "type": "header",
             "data": {
               "text": "2. The concept",
@@ -3683,182 +3491,292 @@
             }
           },
           {
-            "id": "yB6vQudPKq",
+            "id": "kLoSWxMYCv",
+            "type": "paragraph",
+            "data": {
+              "text": "Choosing a university often means choosing a place you have never seen. Many prospective students and their families can't visit a campus before they apply, because it is too far away or too expensive to travel there. They make one of the biggest decisions of their lives from photos and brochures."
+            }
+          },
+          {
+            "id": "2q2mzvCmGO",
+            "type": "paragraph",
+            "data": {
+              "text": "Campus Explorer tries to close that distance. A photo shows you a place, but VR puts you inside it. You can turn your head and see what is behind you, choose which way to walk, and get a feel for how big the spaces are and how they connect. The goal is the feeling of having been there."
+            }
+          },
+          {
+            "id": "ymBbHSO6kV",
+            "type": "paragraph",
+            "data": {
+              "text": "I also wanted the tour to work for as many people as possible. That is why every key location has a spoken description and text, so someone who can't see the scene well or can't hear the narration can still follow the tour."
+            }
+          },
+          {
+            "id": "6vCXBJ6oj7",
+            "type": "header",
+            "data": {
+              "text": "3. The interaction",
+              "level": 2
+            }
+          },
+          {
+            "id": "nuSJ-1aXGF",
+            "type": "paragraph",
+            "data": {
+              "text": "Starting the tourThe app opens on a main menu with three choices."
+            }
+          },
+          {
+            "id": "RTXB6za5A4",
+            "type": "table",
+            "data": {
+              "withHeadings": true,
+              "content": [
+                [
+                  "Button",
+                  "What it does"
+                ],
+                [
+                  "Start Tour",
+                  "Begins the campus tour"
+                ],
+                [
+                  "Instructions",
+                  "Explains how to move and use the features"
+                ],
+                [
+                  "Exit",
+                  "Closes the app"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "C3adSCdGX_",
+            "type": "paragraph",
+            "data": {
+              "text": "Moving around campus:"
+            }
+          },
+          {
+            "id": "ilgO5KuBmS",
+            "type": "paragraph",
+            "data": {
+              "text": "Every scene shows arrows for forward, backward, left and right. Pointing the right-hand controller at an arrow and clicking it teleports you to the next location in that direction, so you choose your own path through campus the way you would on a real walk."
+            }
+          },
+          {
+            "id": "0NcS8azcFU",
+            "type": "paragraph",
+            "data": {
+              "text": "Learning about each place"
+            }
+          },
+          {
+            "id": "tpyT-SIF3K",
+            "type": "table",
+            "data": {
+              "withHeadings": true,
+              "content": [
+                [
+                  "What I do",
+                  "What happens"
+                ],
+                [
+                  "Click the&nbsp;audio button&nbsp;at a key location",
+                  "An AI-generated voice describes that place"
+                ],
+                [
+                  "Read the&nbsp;text box",
+                  "The same information appears as text"
+                ],
+                [
+                  "Click&nbsp;Main Menu&nbsp;(bottom-right of every scene)",
+                  "Returns to the main menu"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "KaroMhNdC2",
+            "type": "paragraph",
+            "data": {
+              "text": "The arrows decide where you go, and the audio and text tell you where you are."
+            }
+          },
+          {
+            "id": "7NdFIEpuKS",
+            "type": "header",
+            "data": {
+              "text": "4. Technical implementation",
+              "level": 2
+            }
+          },
+          {
+            "id": "Kl4H9dACft",
+            "type": "paragraph",
+            "data": {
+              "text": "Engine:&nbsp;Unity 2022.3.14f1, with scripts in C#"
+            }
+          },
+          {
+            "id": "XHUq_ZqiBC",
+            "type": "paragraph",
+            "data": {
+              "text": "Headset:&nbsp;Meta Quest 2, Quest Pro and Quest 3"
+            }
+          },
+          {
+            "id": "aJJY4S9_66",
+            "type": "paragraph",
+            "data": {
+              "text": "Images:&nbsp;High-quality 360° panoramic photographs of key campus locations"
+            }
+          },
+          {
+            "id": "annP5LTl9r",
+            "type": "paragraph",
+            "data": {
+              "text": "Movement:&nbsp;Teleportation scripts that link each scene to its neighbours through directional arrows"
+            }
+          },
+          {
+            "id": "fpgGAFsn-U",
+            "type": "paragraph",
+            "data": {
+              "text": "Narration:&nbsp;AI-generated voice descriptions for important landmarks"
+            }
+          },
+          {
+            "id": "mo88HL9bep",
+            "type": "paragraph",
+            "data": {
+              "text": "Accessibility:&nbsp;Audio descriptions and text boxes at key locations"
+            }
+          },
+          {
+            "id": "Z8iVZFCznW",
+            "type": "paragraph",
+            "data": {
+              "text": "How the scenes connect:&nbsp;"
+            }
+          },
+          {
+            "id": "2mXXXKQ4Ff",
+            "type": "paragraph",
+            "data": {
+              "text": "Each location is its own 360° scene. The arrows in a scene point to the locations next to it, so the whole tour works like a map of connected places. Moving forward from one scene and then backward returns you to where you started, just like walking on campus."
+            }
+          },
+          {
+            "id": "2Se4YhFy9H",
+            "type": "paragraph",
+            "data": {
+              "text": "My role:"
+            }
+          },
+          {
+            "id": "IspKzLwm2L",
+            "type": "paragraph",
+            "data": {
+              "text": "I photographed every location in the tour myself. I took 360° pictures of each place on campus, then registered them so each panorama lined up correctly as a full sphere. I brought each photo into Unity as its own scene and set the scenes up for the headset."
+            }
+          },
+          {
+            "id": "HkoV06mM7w",
+            "type": "paragraph",
+            "data": {
+              "text": "I also wrote the code that connects the scenes. I created an array that holds every scene in the tour, so each arrow knows which scene to load next. This allowed visitors move from one location to the next by clicking an arrow."
+            }
+          },
+          {
+            "id": "u1UXwBNQPM",
+            "type": "header",
+            "data": {
+              "text": "5. Next steps",
+              "level": 2
+            }
+          },
+          {
+            "id": "ajEI9OXrPm",
             "type": "list",
             "data": {
               "style": "unordered",
               "meta": {},
               "items": [
                 {
-                  "content": "A sound-based exploration of how spaces hold emotional memory.",
+                  "content": "Add more campus locations&nbsp;to the tour.",
                   "meta": {},
                   "items": []
                 },
                 {
-                  "content": "It combines ambient sounds and reflections recorded at a real site.",
+                  "content": "Make it work in a web browser,&nbsp;so people without a headset can explore it too.",
                   "meta": {},
                   "items": []
                 },
                 {
-                  "content": "It encourages listeners to re-experience familiar spaces through sound.",
+                  "content": "Test the tour with prospective students,&nbsp;to see which places they want to visit most.",
                   "meta": {},
                   "items": []
                 }
               ]
-            }
-          },
-          {
-            "id": "YaSAa2wVKD",
-            "type": "image",
-            "data": {
-              "caption": "Our concept",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/echoes-3.jpg"
-              }
-            }
-          },
-          {
-            "id": "2jOnMgZlpz",
-            "type": "header",
-            "data": {
-              "text": "3. The experience",
-              "level": 2
-            }
-          },
-          {
-            "id": "EXV7txjqdT",
-            "type": "paragraph",
-            "data": {
-              "text": "Listeners are taken into a darkened room and given headphones. As they listen to each recording, subtle visuals play around them, such as the audio waveforms and photos of the site."
-            }
-          },
-          {
-            "id": "EKzjj7i9Y4",
-            "type": "paragraph",
-            "data": {
-              "text": "Afterwards, they reflect on how the sound made them feel, write their thoughts on a piece of paper, and pin it to the wall, so the room slowly fills with other people’s memories of the place."
-            }
-          },
-          {
-            "id": "vhEdHDw6JB",
-            "type": "image",
-            "data": {
-              "caption": "The experience: a listener in the dark room, with notes pinned to the wall",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/echoes-6.jpg"
-              }
-            }
-          },
-          {
-            "id": "7Az4izMC45",
-            "type": "header",
-            "data": {
-              "text": "4. Inspiration",
-              "level": 2
-            }
-          },
-          {
-            "id": "rxdvsilxDW",
-            "type": "paragraph",
-            "data": {
-              "text": "<b>[murmur]</b> by James Roussel, Shawn Micallef and Gabe Sawhney was a public sound project in Toronto. Signs at specific locations showed a phone number. When people called, they heard recorded memories from others who had been in that exact spot."
-            }
-          },
-          {
-            "id": "yJQpvUyPzL",
-            "type": "header",
-            "data": {
-              "text": "5. Intention",
-              "level": 2
-            }
-          },
-          {
-            "id": "AK2UNKieJn",
-            "type": "list",
-            "data": {
-              "style": "unordered",
-              "meta": {},
-              "items": [
-                {
-                  "content": "To recreate the invisible emotional geography of sound, how what we hear affects how we feel in a space.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "To blur the line between presence and memory, showing that sound alone can create a sense of location.",
-                  "meta": {},
-                  "items": []
-                },
-                {
-                  "content": "To ask what makes a place feel real. Is it what we see, or what we hear around us?",
-                  "meta": {},
-                  "items": []
-                }
-              ]
-            }
-          },
-          {
-            "id": "WucEfIHLnd",
-            "type": "paragraph",
-            "data": {
-              "text": "<b>Can we experience a place without being physically present?</b>"
             }
           }
         ]
       }
     },
     {
-      "id": "forming-presence",
-      "title": "Forming Presence",
+      "id": "learnai",
+      "title": "LearnAI",
       "featured": false,
-      "meta": "Exhibition · Co-curator · Fall 2025",
+      "meta": "AI · Web",
       "categories": [
-        "physical"
+        "ai",
+        "web"
       ],
-      "pitch": "An exhibition on what it means to be present, with four new works in conversation with Vera Molnar, Myron Krueger, exonemo and Behnaz Farahi.",
+      "pitch": "Type one sentence and get a full course.",
       "howTitle": "How I made it",
       "how": [
-        "I co-curated the exhibition with Ahmad, Jason and Mustafa, writing the curatorial statement, selecting four artists and proposing a work in response to each."
+        "The OpenAI API turns one sentence into a full syllabus of 5–8 sections, then writes each lesson as 4–8 narrated slides and builds them into a video. Each stage returns strict JSON that the next stage checks before using it."
       ],
       "tools": [
-        "Curation",
-        "Exhibition design",
-        "p5.js",
-        "Interactive installation"
+        "TypeScript",
+        "React",
+        "OpenAI API"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/iam-agyenim/Learnai"
+        }
+      ],
       "media": {
-        "art": "",
-        "image": "assets/media/presence-1.jpg",
+        "art": "pipeline",
+        "image": "assets/media/screenshot-2026-11-02-at-3-48-49-pm-3763de.png",
         "video": "",
         "embed": "",
-        "alt": "Forming Presence"
+        "alt": ""
       },
       "piece": {
-        "type": "P",
-        "square": "h2",
-        "why": "It holds the whole board together.",
+        "type": "B",
+        "square": "f2",
+        "why": "One sentence, a long reach: a whole course from a single line.",
         "promotion": ""
       },
       "doc": {
-        "time": 1793627734371,
+        "time": 1793619984229,
         "version": "2.31.7",
         "blocks": [
           {
-            "id": "pKTeNocIta",
-            "type": "paragraph",
+            "id": "3Vhy3aEnAi",
+            "type": "embed",
             "data": {
-              "text": "Curated by Ahmad, Jason, Richmond and Mustafa · Exhibition catalogue · Fall 2025"
+              "url": "https://youtu.be/DATDARzTnq8",
+              "caption": ""
             }
           },
           {
-            "id": "x9vFI5ZD01",
+            "id": "d8xXKW0HRV",
             "type": "header",
             "data": {
               "text": "1. The idea",
@@ -3866,266 +3784,375 @@
             }
           },
           {
-            "id": "trIichkIqy",
+            "id": "W5FBDLW5rs",
             "type": "paragraph",
             "data": {
-              "text": "Forming Presence is an exhibition I co-curated with Ahmad, Jason and Mustafa. We wrote the curatorial statement, chose four artists whose practice deals with presence, and proposed a new work in the spirit of each one. This catalogue brings it all together."
+              "text": "LearnAI turns a single sentence into a course. You type something like “Teach me Python,” and the app plans a full syllabus, then teaches the first lesson as a short video made of slides with a voice reading the script. After each lesson, you choose what happens next. You can go on to the next lesson, go deeper, ask for a simpler explanation, get an exercise, or turn the topic into a project."
             }
           },
           {
-            "id": "xBIQler65C",
+            "id": "e2PH4fYhp7",
+            "type": "paragraph",
+            "data": {
+              "text": "It works like a chat. You talk to it, and it answers with lessons."
+            }
+          },
+          {
+            "id": "ImTyixVuOq",
             "type": "header",
             "data": {
-              "text": "My role",
+              "text": "2. The concept",
+              "level": 2
+            }
+          },
+          {
+            "id": "vONPB1ozak",
+            "type": "paragraph",
+            "data": {
+              "text": "Online courses are written once for everyone. Every learner gets the same videos in the same order, at the same level, whether they are confused or bored."
+            }
+          },
+          {
+            "id": "FbvXrbPeIx",
+            "type": "paragraph",
+            "data": {
+              "text": "I wanted to build a teacher that responds to the learner. LearnAI starts with structure, a real syllabus that builds from beginner to advanced like a course you would buy. Then it stays flexible inside that structure. If a lesson is too hard, you ask for it more simply. If it is too easy, you go deeper. If you want to practise, it gives you an exercise."
+            }
+          },
+          {
+            "id": "5tcLklbbow",
+            "type": "paragraph",
+            "data": {
+              "text": "The course plan keeps the learning organised, and the chat keeps it personal."
+            }
+          },
+          {
+            "id": "D9E1dvQH5Y",
+            "type": "header",
+            "data": {
+              "text": "3. The interaction",
+              "level": 2
+            }
+          },
+          {
+            "id": "YxYpqSHt4V",
+            "type": "header",
+            "data": {
+              "text": "Step 1: ask for a topic",
               "level": 3
             }
           },
           {
-            "id": "RWPEdoL9Wv",
+            "id": "HGuTFZRrfv",
             "type": "paragraph",
             "data": {
-              "text": "Besides co-curating the exhibition, I built the digital installations and the p5.js artwork, including <i>Moments of Presence</i>, the series of grid prints generated with p5.js."
+              "text": "The user types what they want to learn, for example “Teach me Python.” The app removes phrases like “teach me” or “I want to learn” to find the topic."
             }
           },
           {
-            "id": "BrUC5UmOGS",
+            "id": "cWUjRjdoMm",
             "type": "header",
             "data": {
-              "text": "2. The curatorial statement",
-              "level": 2
+              "text": "Step 2: watch the app build the course",
+              "level": 3
             }
           },
           {
-            "id": "eVs3SYJ5Cu",
+            "id": "HJec4fDJVl",
             "type": "paragraph",
             "data": {
-              "text": "What does it mean to be present? Presence can be about the body, proof of our existence. It can be mental, a commitment of focus, or spiritual, a matter of belief. It is shaped by time and by space, by architecture, landscape and digital environments."
+              "text": "While it works, the chat shows each stage so the user knows what is happening."
             }
           },
           {
-            "id": "TTDS3GLDBY",
-            "type": "paragraph",
-            "data": {
-              "text": "Presence can also be felt in the smallest disruptions. A slight shift in a repeated form, or a pattern that wavers, can pull attention back into the moment. It also reveals itself through absence, in moments when body, mind and spirit fail to line up, a condition technology has made more common. The exhibition proposes that this fragmentation may itself be a form of presence."
-            }
-          },
-          {
-            "id": "dqXvaUJHZ9",
-            "type": "paragraph",
-            "data": {
-              "text": "Finally, presence is felt through the attention of others. A gaze, a touch or someone entering your space can turn your presence into a force acting on you."
-            }
-          },
-          {
-            "id": "6NZPfmXfbn",
-            "type": "header",
-            "data": {
-              "text": "3. The artists",
-              "level": 2
-            }
-          },
-          {
-            "id": "OIy9B460dy",
+            "id": "DoGx7Vg4fq",
             "type": "table",
             "data": {
               "withHeadings": true,
               "stretched": false,
               "content": [
                 [
-                  "Artist",
-                  "Why they belong here"
+                  "Stage",
+                  "What the app is doing"
                 ],
                 [
-                  "Vera Molnar",
-                  "Her “1% disorder” shows that presence comes from noticing small changes in an ordered system"
+                  "Thinking",
+                  "Reading the request"
                 ],
                 [
-                  "Myron Krueger",
-                  "His responsive environments treat presence as something you perform with your whole body"
+                  "Generating syllabus",
+                  "Planning the full course"
                 ],
                 [
-                  "exonemo",
-                  "Their work shows how presence is negotiated between physical space and the internet"
+                  "Creating video",
+                  "Writing and building the first lesson"
                 ],
                 [
-                  "Behnaz Farahi",
-                  "Her responsive, soft-robotic work turns gaze and attention into physical behaviour"
+                  "Complete",
+                  "The lesson is ready to watch"
                 ]
               ]
             }
           },
           {
-            "id": "T0a8MFuzLg",
+            "id": "g3wa7xia5e",
             "type": "header",
             "data": {
-              "text": "4. The works",
+              "text": "Step 3: follow the syllabus",
+              "level": 3
+            }
+          },
+          {
+            "id": "4Kyb9LOoOn",
+            "type": "paragraph",
+            "data": {
+              "text": "The syllabus appears in the sidebar, split into sections from fundamentals to advanced topics, with the current lesson marked."
+            }
+          },
+          {
+            "id": "AHbo9XeZ7L",
+            "type": "header",
+            "data": {
+              "text": "Step 4: watch the lesson",
+              "level": 3
+            }
+          },
+          {
+            "id": "ooLMNZGEFP",
+            "type": "paragraph",
+            "data": {
+              "text": "Each lesson is a short video of 4 to 8 slides, and every slide has its own narration."
+            }
+          },
+          {
+            "id": "wg8fk8mx88",
+            "type": "header",
+            "data": {
+              "text": "Step 5: choose what comes next",
+              "level": 3
+            }
+          },
+          {
+            "id": "gOe1rKXfTM",
+            "type": "table",
+            "data": {
+              "withHeadings": true,
+              "stretched": false,
+              "content": [
+                [
+                  "Button",
+                  "What it does"
+                ],
+                [
+                  "Continue to next lesson",
+                  "Moves to the next lesson in the syllabus"
+                ],
+                [
+                  "Go deeper",
+                  "Explains the same idea in more depth"
+                ],
+                [
+                  "Explain more simply",
+                  "Explains the same idea in simpler words"
+                ],
+                [
+                  "Give me an exercise",
+                  "Creates a practice exercise"
+                ],
+                [
+                  "Turn into a project",
+                  "Creates a real-world project on the topic"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "j63rdFn149",
+            "type": "paragraph",
+            "data": {
+              "text": "<b>The syllabus decides what to learn, and the buttons decide how to learn it.</b>"
+            }
+          },
+          {
+            "id": "4YqBieUXw1",
+            "type": "header",
+            "data": {
+              "text": "4. Technical implementation",
               "level": 2
             }
           },
           {
-            "id": "qt591vQ3Xj",
-            "type": "image",
+            "id": "LL5vJFUMvn",
+            "type": "list",
             "data": {
-              "caption": "The list of works",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-9.jpg"
-              }
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "<b>Front end.</b> React, TypeScript, Vite, Tailwind CSS and shadcn-ui.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>AI.</b> OpenAI’s gpt-4o-mini writes the syllabus, lessons, explanations, exercises and projects. DALL·E 3 makes the lesson images.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Narration.</b> The browser’s built-in speech synthesis reads each slide’s script aloud.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Video.</b> Slides are rendered on a canvas and exported as a video. If the export fails, the lesson plays directly as narrated slides.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
             }
           },
           {
-            "id": "ypvqu427iS",
+            "id": "ZZh0xEt6xm",
             "type": "header",
             "data": {
-              "text": "Login, after exonemo",
+              "text": "How a course is made, in stages",
               "level": 3
             }
           },
           {
-            "id": "arQizTXi9X",
+            "id": "WXp99Lf2fc",
+            "type": "list",
+            "data": {
+              "style": "ordered",
+              "meta": {
+                "counterType": "numeric"
+              },
+              "items": [
+                {
+                  "content": "<b>Course architecture.</b> The AI designs a syllabus of 5 to 8 sections, each with 3 to 6 lessons, from absolute beginner to advanced. For a big topic like Python, this can reach 30 to 50 lessons.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Storyboard.</b> For the current lesson, the AI writes 4 to 8 scenes. Each scene has its on-screen content and a voice script.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Slides and video.</b> The app turns the scenes into slides and builds the video.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
+            }
+          },
+          {
+            "id": "bhBFKchFMG",
             "type": "paragraph",
             "data": {
-              "text": "A wall of synchronised monitors shows a blurred live feed of the audience. Viewers can choose to scan a QR code, and a central screen counts how many are “online”. The simple act of logging in creates a second, digital version of your presence."
+              "text": "Every stage asks the AI to answer in strict JSON, so the next stage can read it reliably."
             }
           },
           {
-            "id": "xhyriyqhp7",
-            "type": "image",
-            "data": {
-              "caption": "Login",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-10.jpg"
-              }
-            }
-          },
-          {
-            "id": "uEMaGSw3Th",
+            "id": "VTGm7m24Hs",
             "type": "header",
             "data": {
-              "text": "PRESENCE/RUPTURE, after Myron Krueger",
+              "text": "Built not to break",
               "level": 3
             }
           },
           {
-            "id": "EXWvxDGQ5l",
+            "id": "eWo4ye1KM9",
             "type": "paragraph",
             "data": {
-              "text": "A participant moves in front of a camera while their silhouette is projected back in real time. When they are physically disconnected, their silhouette floats upward. When they are mentally elsewhere, ghostly echoes of past movements crowd around them. When they are spiritually fragmented, their body splits apart in the projection."
+              "text": "I added a fallback at every step, so the learner always gets something."
             }
           },
           {
-            "id": "pblSDAdAdn",
-            "type": "image",
+            "id": "8vJ0BIgkS5",
+            "type": "list",
             "data": {
-              "caption": "PRESENCE/RUPTURE",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-11.jpg"
-              }
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "If the syllabus fails, the app creates a simple starter syllabus.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "If the video export fails, the slides play directly in the browser.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "If everything fails, the app shows a short welcome slide on the topic.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "If image generation fails, a stable default image is used.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
             }
           },
           {
-            "id": "R1xzi4VXrF",
+            "id": "sZ0mDTrFGl",
             "type": "header",
             "data": {
-              "text": "Moments of Presence, after Vera Molnar",
+              "text": "Code I’m really proud of",
               "level": 3
             }
           },
           {
-            "id": "O8RzGW1UsJ",
+            "id": "XlNP2PeHTg",
             "type": "paragraph",
             "data": {
-              "text": "A sequence of framed digital prints, built with p5.js. It begins with an ordered geometric grid, and as the viewer moves from left to right, small changes appear. A line bends, a square disappears, a shape distorts. Each small shift catches the eye and pulls the viewer into the moment."
+              "text": "AI models don’t always return perfect JSON. Sometimes the answer is wrapped in markdown, and sometimes it is cut off before the last bracket. I wrote this function to clean the answer and, if it still won’t parse, to find the JSON inside it and close any brackets that were left open. This one function kept the whole course pipeline from crashing."
             }
           },
           {
-            "id": "ntgJdKbAiW",
-            "type": "image",
+            "id": "DNKEcSnmn1",
+            "type": "code",
             "data": {
-              "caption": "Moments of Presence, built with p5.js",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-13.jpg"
-              }
+              "language": "typescript",
+              "filename": "openai.ts",
+              "code": "private static extractAndRepairJSON(content: string): any {\n  let cleanedContent = content.trim();\n\n  // Remove markdown code blocks if present\n  cleanedContent = cleanedContent.replace(/```json\\n?/g, '').replace(/```\\n?/g, '').trim();\n\n  try {\n    return JSON.parse(cleanedContent);\n  } catch (e) {\n    // Find the JSON structure inside the answer\n    const jsonMatch = cleanedContent.match(/(\\[[\\s\\S]*\\]|\\{[\\s\\S]*\\})/);\n    if (jsonMatch) {\n      let jsonString = jsonMatch[0];\n\n      // Truncation repair: close open brackets if missing\n      const openBrackets = (jsonString.match(/\\[/g) || []).length;\n      const closeBrackets = (jsonString.match(/\\]/g) || []).length;\n      const openCurly = (jsonString.match(/\\{/g) || []).length;\n      const closeCurly = (jsonString.match(/\\}/g) || []).length;\n\n      if (openBrackets > closeBrackets) jsonString += ']'.repeat(openBrackets - closeBrackets);\n      if (openCurly > closeCurly) jsonString += '}'.repeat(openCurly - closeCurly);\n\n      return JSON.parse(jsonString);\n    }\n    throw e;\n  }\n}"
             }
           },
           {
-            "id": "JYxpVFD5Fw",
+            "id": "IVeb2oXBtE",
             "type": "header",
             "data": {
-              "text": "Contours of Attention, after Behnaz Farahi",
-              "level": 3
-            }
-          },
-          {
-            "id": "6mSzlC0a4l",
-            "type": "paragraph",
-            "data": {
-              "text": "An interactive soft-robotic “body-landscape” of 3D-printed forms. When many visitors focus their gaze on one area, the membrane contracts. When attention disperses, it releases and breathes in slow, calming waves. A gentle touch makes it tighten, then soften. Presence becomes something shared rather than individual."
-            }
-          },
-          {
-            "id": "Grs8vpXuys",
-            "type": "image",
-            "data": {
-              "caption": "Contours of Attention",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-14.jpg"
-              }
-            }
-          },
-          {
-            "id": "4pMEqFkxS5",
-            "type": "image",
-            "data": {
-              "caption": "Contours of Attention",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-15.jpg"
-              }
-            }
-          },
-          {
-            "id": "A8GkZL13Dm",
-            "type": "header",
-            "data": {
-              "text": "5. What it says about presence",
+              "text": "5. Next steps",
               "level": 2
             }
           },
           {
-            "id": "ApRWCjJ9dn",
-            "type": "paragraph",
+            "id": "4JmP8dJzoq",
+            "type": "list",
             "data": {
-              "text": "Together, the works suggest that presence is not one thing but a relationship between body, mind, time, space and other people, an active process of engaging with the world rather than a state you are simply in."
-            }
-          },
-          {
-            "id": "igJdrnjztY",
-            "type": "image",
-            "data": {
-              "caption": "The back cover",
-              "withBorder": false,
-              "withBackground": false,
-              "stretched": false,
-              "file": {
-                "url": "assets/media/presence-16.jpg"
-              }
+              "style": "unordered",
+              "meta": {},
+              "items": [
+                {
+                  "content": "<b>Make it adaptive.</b> Every lesson is set to beginner level right now. Next, the level should change based on how the learner is doing.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Save progress,</b> so learners can come back to their course later.",
+                  "meta": {},
+                  "items": []
+                },
+                {
+                  "content": "<b>Better voices,</b> using AI voices instead of the browser’s built-in speech.",
+                  "meta": {},
+                  "items": []
+                }
+              ]
             }
           }
         ]
