@@ -56,5 +56,26 @@ window.PF = (() => {
     }));
   }
 
+  // Light/dark toggle in the menu. Follows the device until the visitor picks;
+  // the choice is remembered (the <head> script applies it before paint).
+  function wireTheme() {
+    const btn = document.querySelector('.theme-toggle');
+    if (!btn) return;
+    const root = document.documentElement;
+    const current = () => root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const paint = () => {
+      const dark = current() === 'dark';
+      btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      if (root.dataset.theme) document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { m.content = dark ? '#16130f' : '#f1e9da'; });
+    };
+    btn.addEventListener('click', () => {
+      root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+      paint();
+    });
+    paint();
+  }
+  wireTheme();
+
   return { esc, rich, safeUrl, isExternal, projectUrl, GLYPH, NAME, VS, media, toEmbed, isVideoFile, wireVideos };
 })();

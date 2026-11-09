@@ -26,9 +26,10 @@
   color-scheme: light;
 }
 
-/* Dark mode: follows the visitor's device setting. Warm charcoal, same red. */
+/* Dark mode: follows the visitor's device setting unless they pick one with
+   the toggle in the menu (data-theme on <html>). Warm charcoal, same red. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #16130f;
     --paper: #201c17;
     --ink: #f1e9da;
@@ -42,8 +43,23 @@
     --media: #231f19;
     color-scheme: dark;
   }
-  body::before { opacity: 0.6; }
+  :root:not([data-theme="light"]) body::before { opacity: 0.6; }
 }
+:root[data-theme="dark"] {
+  --bg: #16130f;
+  --paper: #201c17;
+  --ink: #f1e9da;
+  --ink-2: #c9bfae;
+  --ink-3: #968c7e;
+  --line: rgba(241, 233, 218, 0.14);
+  --accent: #e2683e;
+  --accent-soft: rgba(226, 104, 62, 0.18);
+  --sq-light: #2b261f;
+  --sq-dark: #403729;
+  --media: #231f19;
+  color-scheme: dark;
+}
+:root[data-theme="dark"] body::before { opacity: 0.6; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
@@ -96,6 +112,13 @@ a { color: inherit; }
 .nav { display: flex; gap: 26px; margin-left: auto; }
 .nav a { text-decoration: none; color: var(--ink-2); font-size: 0.95rem; transition: color 0.2s; }
 .nav a:hover { color: var(--accent); }
+.theme-toggle {
+  display: grid; place-items: center; width: 32px; height: 32px; margin: -6px -6px -6px 0;
+  background: none; border: 0; border-radius: 50%; color: var(--ink-2); cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+.theme-toggle:hover { color: var(--accent); background: var(--accent-soft); }
+.theme-toggle svg { width: 18px; height: 18px; }
 
 /* -------------------------------------------------------------------- hero */
 .hero {
